@@ -2,7 +2,7 @@
 
 Repositorio Programación
 
-**Sofía Calderón Juárez**_UP210300_
+**Sofía Calderón Juárez** _UP210300_
 
 Estudinte de la **Universidad Autonoma de Aguascalientes**
 
