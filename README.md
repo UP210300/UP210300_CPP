@@ -40,7 +40,8 @@ This course is conformed of four main parts:
 
 ## Find me 
 
->[Check me out!](https://github.com/UP210300/UP210300_CPP.git)
+>[Check me out!](https://www.linkedin.com/in/sof%C3%ADa-calder%C3%B3n-ju%C3%A1rez-352a74220/)
+>[Google Cloud](https://www.cloudskillsboost.google/public_profiles/226f08b0-a3df-44f7-b999-0e87c65ab458)
 
 ## Clone my repo
 
