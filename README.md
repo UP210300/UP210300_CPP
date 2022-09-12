@@ -2,7 +2,7 @@
 
 <div align="center">
 
-## Programming Course
+# Programming Course
 
 </div>
 
@@ -30,7 +30,7 @@ This course is conformed of four main parts:
 
 ## Find me 
 
-[Check me out!](https://github.com/UP210300/UP210300_CPP.git)
+>[Check me out!](https://github.com/UP210300/UP210300_CPP.git)
 
 ## Clone my repo
 
