@@ -4,6 +4,11 @@
 
 # Programming Course
 
+<div align ="center">
+<img alt="comdisc" height="100" src="Imagenes/glow(2).png"/> •
+<img alt="c++" height="100" src="Imagenes/glow.png"/> •
+<img alt="com" height="100" src="Imagenes/glow(1).png"/> •
+
 </div>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/UP210300/UP210300_CPP)
