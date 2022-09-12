@@ -13,6 +13,7 @@
 <img alt="com" height="150" src="Imagenes/glow(1).png"/>  
 
 </div>
+<br>
 
 ![GitHub contributors](https://img.shields.io/github/contributors/UP210300/UP210300_CPP)
 ![GitHub last commit](https://img.shields.io/github/last-commit/UP210300/UP210300_CPP)
