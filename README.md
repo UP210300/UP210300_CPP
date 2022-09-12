@@ -4,16 +4,19 @@
 
 # Programming Course
 
+</div>
+
 <div align ="center">
-<img alt="comdisc" height="100" src="Imagenes/glow(2).png"/> •
-<img alt="c++" height="100" src="Imagenes/glow.png"/> •
-<img alt="com" height="100" src="Imagenes/glow(1).png"/> •
+
+<img alt="comdisc" height="150" src="Imagenes/glow(2).png"/>  •
+<img alt="c++" height="150" src="Imagenes/glow.png"/>  •
+<img alt="com" height="150" src="Imagenes/glow(1).png"/>  •
 
 </div>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/UP210300/UP210300_CPP)
 
-This programming course is about  _**c++**_, here you will find the main topics that will be reviewed as well as examples and exercises for each toic
+This programming course is about  _**c++**_, here you will find the main topics that will be reviewed as well as examples and exercises for each topic.
 
 <div align="center">
 
