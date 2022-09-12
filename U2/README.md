@@ -1,7 +1,5 @@
 # UP210300_CPP
 
-Repositorio Programación
-
-**UNIDAD 2**
+**UNIT 2**
 
 
