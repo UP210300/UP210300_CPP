@@ -8,7 +8,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/UP210300/UP210300_CPP)
 
-This programming course is about  _**c++ **_, here you will find the main topics that will be reviewed as well as examples and exercises for each toic
+This programming course is about  _**c++**_, here you will find the main topics that will be reviewed as well as examples and exercises for each toic
 
 <div align="center">
 
