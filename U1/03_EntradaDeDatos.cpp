@@ -1,6 +1,6 @@
 /*
     Unit 1. Entry of data
-    Autor: Sofia Calderon Juarez
+    Author: Sofia Calderon Juarez
     Date: 21/09/2022
     Description: Ways to entry different types of data by the user
 */
@@ -11,6 +11,7 @@
 #include <stdio.h>
 
 //Use of namespace to avoid the use of std::
+
 using namespace std;
 
 //Main function integer type

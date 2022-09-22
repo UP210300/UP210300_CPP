@@ -1,5 +1,5 @@
 /* Unit 1. Types of data
-    Autor: Sofia Calderon Juarez
+    Author: Sofia Calderon Juarez
     Date: 16/09/2022
     Description: Shows the different types of data for c++
 */
