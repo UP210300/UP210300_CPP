@@ -30,9 +30,9 @@ int main (){
     //More info at:
     //https://cplusplus.com/reference/cstdio/printf/
     printf ("Usando la funcion printf y scanf\n");
-    printf ("Ingresa un dato de tipo entero: \n");
-    scanf ("%", &entero);
-    printf ("El dato ingresado es: %i \n", entero);
+    printf ("Ingresa un dato de tipo entero: ");
+    scanf ("%d", &entero);
+    printf ("El dato ingresado es: %d \n", entero);
 
     //As a function it must return to a value, in this case 0
     return 0;
