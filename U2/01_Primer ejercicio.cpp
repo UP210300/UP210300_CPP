@@ -2,7 +2,7 @@
     Unit 2. Conditionals
     Author: Sofia Calderon Juarez
     Date: 22/09/2022
-    Description: Shows the use of simple if
+    Description: Shows the use of compisite if 
 */
 
 //Library for output and input of the screen
