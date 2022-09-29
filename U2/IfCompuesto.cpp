@@ -16,6 +16,7 @@ using namespace std;
 
 //Main function integer type
 int main (){
+    
     int number;
     int data=1;
 
