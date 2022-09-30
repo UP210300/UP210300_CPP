@@ -5,6 +5,7 @@
 Exersice 1.-Program that use compaired if to tell the user how much taxes they have to pay.
  
 ///c++
+
     //Declaring variables
     float income, taxToPay;
     int percentage;
