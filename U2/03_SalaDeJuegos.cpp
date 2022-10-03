@@ -47,7 +47,7 @@ int main (){
     }
     
     //Display the amount of money the user have to pay
-    cout << "You have to pay $" << price; cout <<" to enter the game room" <<endl;;
+    cout << "You have to pay $" << price; cout <<" to enter the game room" <<endl;
     
     //As a function it must return to a value, in this case 0
     return 0;
