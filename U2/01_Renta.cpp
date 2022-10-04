@@ -22,7 +22,8 @@ int main (){
     cout << "The tax brackets for the declaration of income in a given country are the following: \nIncome                             Tax rate \nLess than   $10,000                 5% \nBetween     $10,000 and $20,000     15% \nBetween     $20,000 and $35,000     20% \nBetween     $35,000 and $60,000     30% \nMore than   $60,000                 45% " << endl;
 
     //Declaring variables
-    float income, taxToPay;
+    float income;
+    float taxToPay;
     int percentage;
 
     //Ask the user for their income
@@ -51,7 +52,7 @@ int main (){
     //Operation of how much the user have to pay acording to the tax rate and print the result
     taxToPay=income*percentage/100;
     cout << "Your tax rate is: " <<percentage;  cout << "%\n";
-    cout << "You have to pay: $" <<taxToPay; cout <<endl;
+    cout << "You have to pay: $" <<taxToPay <<endl;
 
     //As a function it must return to a value, in this case 0
     return 0;

@@ -7,7 +7,8 @@ Exersice 1.-Program that use compaired if to tell the user how much taxes they h
 ///c++
 
     //Declaring variables
-    float income, taxToPay;
+    float income;
+    float taxToPay;
     int percentage;
 
     //Ask the user for their income
@@ -48,7 +49,8 @@ Exercise 2.-Program that reads the users score and show its level of performance
 ///c++
 
     //Declaring variables
-    double score, money;
+    double score;
+    double money;
     
     //Asking the user for its score
     cout << "Please enter your score during your evaluation: ";
@@ -78,7 +80,8 @@ Program that automatically calculate the price you should charge customers for e
 ///c++
 
     //Declaring variables
-    int age, price;
+    int age;
+    int price;
 
     //Asking the user its age
     cout << "Please enter your age: ";
@@ -108,5 +111,5 @@ Program that automatically calculate the price you should charge customers for e
 
 Code explanation
 
-For this program 
+For this program firt we set 
     

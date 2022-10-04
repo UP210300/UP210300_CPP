@@ -22,7 +22,8 @@ int main (){
     cout << "Game room \n Age                       Price \n Younger than 4 years       Free \n Between 4 and 18 years     5$ \n 18 years or aolder         10$ \n";
     
     //Declaring variables
-    int age, price;
+    int age;
+    int price;
 
     //Asking the user its age
     cout << "Please enter your age: ";

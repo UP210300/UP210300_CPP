@@ -30,11 +30,14 @@ int main()
     string pizzaType;
     string ingredient;
 
-    cout << "Hi dear customer! \nPlease chose an option: \n1: Vegan \n2: Not vegan \n";
+    //Asking the user to choose a pizza type
+    cout << "Hi dear customer! \nPlease choose an option: \n1: Vegan \n2: Not vegan \nYour choice: ";
     cin >> option;
+
+    //Acording to that option the user has to choose another ingredient
     if (option == 1)
     {
-        cout << "Excellent choice! \nPlease choose one complement for your pizza: \n1:Bell pepper \n2:Tofu";
+        cout << "Excellent choice! \nPlease choose one complement for your pizza: \n1:Bell pepper \n2:Tofu \nYour choice: ";
         cin >> complement;
         if (complement == 1)
         {
@@ -53,7 +56,7 @@ int main()
     }
     else if (option == 2)
     {
-        cout << "Excellent choice! \nPlease choose one complement for your pizza: \n1:Pepperoni \n2:Jam \n3:Salmon";
+        cout << "Excellent choice! \nPlease choose one complement for your pizza: \n1:Pepperoni \n2:Jam \n3:Salmon \nYour choice: ";
         cin >> complement;
         if (complement == 1)
         {
@@ -73,13 +76,14 @@ int main()
             cout << "Please enter a valid option.";
         }
 
-        pizzaType = "notvegan";
+        pizzaType = "not vegan";
     }
     else
     {
         cout << "Sorry! This is not a valid option, plese try again";
     }
-
+ 
+    //Display on the screen the users order acording to what they chose
     cout << "Your order is: " << pizzaType;
     cout << " pizza with tomato sauce, mozzarella and " << ingredient;
     cout << endl;
