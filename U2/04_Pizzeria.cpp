@@ -16,7 +16,7 @@
 
 using namespace std;
 
-// Program that automatically calculate the price you should charge customers for entering to the game room.
+// Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
 
 // Main function integer type
 int main()

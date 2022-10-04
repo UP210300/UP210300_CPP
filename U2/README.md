@@ -44,6 +44,12 @@ Code explanation
 
 This program asks the user for its annual income and displays the tax rate thet corresponds and how much they have to pay, for that we implement a composite if. Firts of all we declare three variables, one for the income(income), another one for the amount they have to pay(taxToPay) and one to save the percentage of the tax rate(percentage). Then we have to ask the user for its income and save it on income variable. Then we use "if" and "else if" statement to compare the income to the tax rate. Once one of the staments is true it executes the operation to know how much the user has to pay (taxToPay=income*percentage/100). Finaly it is display on to the scren the tax rate and the amount to pay.
 
+Code
+
+Output
+
+<img alt="comdisc" height="150" src="Imagenes/cap 1.1.png"/>  
+
 Exercise 2.-Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
 ///c++
