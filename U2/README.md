@@ -48,7 +48,7 @@ Code
 
 Output
 
-<img alt="comdisc" height="150" src="Imagenes/cap 1.1.png"/>  
+<img alt="comdisc" height="150" src="Imagenes/cap1.1.png"/> 
 
 Exercise 2.-Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
