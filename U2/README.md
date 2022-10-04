@@ -37,7 +37,7 @@ Exersice 1.-Program that use compaired if to tell the user how much taxes they h
     //Operation of how much the user have to pay acording to the tax rate and print the result
     taxToPay=income*percentage/100;
     cout << "Your tax rate is: " <<percentage;  cout << "%\n";
-    cout << "You have to pay: " <<taxToPay;  cout << " $" <<endl;
+    cout << "You have to pay: $" <<taxToPay <<endl;
 ///
 
 Code explanation
@@ -64,7 +64,7 @@ Exercise 2.-Program that reads the users score and show its level of performance
         cout << "The amout of money you will get is $" << money;
     }
     else {
-        cout<< "This is not a valid score, please enter a new value"; cout <<endl;
+        cout<< "This is not a valid score, please enter a new value" <<endl;
     }
 ///
 
@@ -111,5 +111,77 @@ Program that automatically calculate the price you should charge customers for e
 
 Code explanation
 
-For this program firt we set 
+For this program firt we set two integer variables, one to find out the age of the user (age) and a second one for tuhe price the user have to pay (price). Then we ask the user its age and save it on to the variable age. Nex the is the if statement that look for the age rage that the user belong, once one of the statements is true there is an asing value for price. If any of the statements is true it displays an error message. Finally it prints the omunt of money the user has to pay to enter the room.
+
+Exercise 4.-Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
+
+///c++
+
+    // Declaring variables
+    int option;
+    int complement;
+    string pizzaType;
+    string ingredient;
+
+    //Asking the user to choose a pizza type
+    cout << "Hi dear customer! \nPlease choose an option: \n1: Vegan \n2: Not vegan \nYour choice: ";
+    cin >> option;
+
+    //Acording to that option the user has to choose another ingredient
+    if (option == 1)
+    {
+        cout << "Excellent choice! \nPlease choose one complement for your pizza: \n1:Bell pepper \n2:Tofu \nYour choice: ";
+        cin >> complement;
+        if (complement == 1)
+        {
+            ingredient = "bell pepper";
+        }
+        else if (complement == 2)
+        {
+            ingredient = "tofu";
+        }
+        else
+        {
+            cout << "Please enter a valid option.";
+        }
+
+        pizzaType = "vegan";
+    }
+    else if (option == 2)
+    {
+        cout << "Excellent choice! \nPlease choose one complement for your pizza: \n1:Pepperoni \n2:Jam \n3:Salmon \nYour choice: ";
+        cin >> complement;
+        if (complement == 1)
+        {
+            ingredient = "pepperoni";
+        }
+        else if (complement == 2)
+        {
+            ingredient = "jam";
+        }
+        else if (complement == 3)
+        {
+            ingredient = "salmon";
+        }
+
+        else
+        {
+            cout << "Please enter a valid option.";
+        }
+
+        pizzaType = "not vegan";
+    }
+    else
+    {
+        cout << "Sorry! This is not a valid option, plese try again";
+    }
+ 
+    //Display on the screen the users order acording to what they chose
+    cout << "Your order is: " << pizzaType;
+    cout << " pizza with tomato sauce, mozzarella and " << ingredient;
+    cout << endl;
+///
+
+On this program the user has to choose between vegan or not vegan pizza. We have to set four variables, two integer type, one for the two pizza options (option) and another one for the complements (complement).   The other variables are string type, there is one for thye pizza type (pizzaType) and a second one for the complement ingredient (ingredient). Then we have to ask with pizza tipe does the user wants, after that there are two main if statements one for each type of pizza, alse the is an asing value for the variable pizzaType for the two different options. On those is statements there is anothe if clause to ask the user wich complement wants, thyen there is a nother if statement to asing  a value for ingredient. Id any of the other statements is false it is diaplay an error message. Fianlly it is display on to the screen the order of the user wich contains the type of pizza and the choosen complement.
+
     
