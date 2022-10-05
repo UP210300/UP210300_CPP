@@ -25,14 +25,14 @@ int main (){
     float income;
     float taxToPay;
     int percentage;
-
+    int error=0;
     //Ask the user for their income
     cout << "Please enter your annual rent: ";
     cin >>income;
     
     
     //Look for the tax rate acording to the income
-    if (income<10000){
+    if ((income<10000)&&(income>0)){
         percentage=5;
     }
     else if (income>=10000 && income<20000){
@@ -47,12 +47,22 @@ int main (){
     else if (income>=60000){
         percentage=45;
     }
+    else 
+    {
+        error = 1;
+    }
     
     
     //Operation of how much the user have to pay acording to the tax rate and print the result
-    taxToPay=income*percentage/100;
-    cout << "Your tax rate is: " <<percentage;  cout << "%\n";
-    cout << "You have to pay: $" <<taxToPay <<endl;
+    if (error)
+    {
+        cout<< "Please enter a valid income"<<endl;
+    }
+    else
+    {
+        cout << "Your tax rate is: " <<percentage;  cout << "%\n";
+        cout << "You have to pay: $" <<taxToPay <<endl;
+    }
 
     //As a function it must return to a value, in this case 0
     return 0;

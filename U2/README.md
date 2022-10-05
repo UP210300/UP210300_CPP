@@ -48,7 +48,12 @@ Code
 
 Output
 
-<img alt="Output1" height="150" src="Imagenes/cap1.1.png"/> 
+<img alt="Output1" height="150" src="Imagenes/cap1.1.png"/> <br>
+<img alt="Output2" height="150" src="Imagenes/cap1.2.png"/> <br>
+<img alt="Output3" height="150" src="Imagenes/cap1.3.png"/> <br>
+<img alt="Output4" height="150" src="Imagenes/cap1.4.png"/> <br>
+<img alt="Output5" height="150" src="Imagenes/cap1.5.png"/> 
+
 
 Exercise 2.-Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
@@ -77,6 +82,11 @@ Exercise 2.-Program that reads the users score and show its level of performance
 Code explanation
 
 This program uses composite is as well to find out the users score and acordind to there is a level of performance wich is rewarded with money. First we have to declare variables, one for the score(score) and another one for the omount of money they are getting (money). After this we ask the user for the information and save it on the score variable. There are only three levels of performance, each one has a number so in the if statement there is the condition that the score the user has enter must correcspond to one of those values and if it is true executes the operation to find out the amount of money the user will get in reward of its work, also it will display on the screen the score and the amount of money. However if the statement is false it will print an error mesage.
+
+Code
+
+Output
+
 
 Exercice 3.-
 

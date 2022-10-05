@@ -34,7 +34,7 @@ int main (){
     {
         money=score*2400;
         cout << "Your score this year is: "<< score; cout << "\n";
-        cout << "The amout of money you will get is $" << money;
+        cout << "The amout of money you will get is $" << money <<endl;
     }
     else {
         cout<< "This is not a valid score, please enter a new value" <<endl;
