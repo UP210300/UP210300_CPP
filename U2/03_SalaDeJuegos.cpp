@@ -19,7 +19,7 @@ using namespace std;
 //Main function integer type
 int main (){
     
-    cout << "Game room \n Age                       Price \n Younger than 4 years       Free \n Between 4 and 18 years     5$ \n 18 years or aolder         10$ \n";
+    cout << "Game room \n Age                       Price \n Younger than 4 years       Free \n Between 4 and 18 years     5$ \n 18 years or older         10$ \n";
     
     //Declaring variables
     int age;
@@ -27,7 +27,7 @@ int main (){
 
     //Asking the user its age
     cout << "Please enter your age: ";
-    cin >> age; 
+    cin >> age;
 
     //Look for tre age range to know how much the have to pay
     if ((age>=0)&&(age<4))

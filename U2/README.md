@@ -66,7 +66,8 @@ Output
 <img alt="Output3" height="150" src="Imagenes/cap1.3.png"/> <br>
 <img alt="Output4" height="150" src="Imagenes/cap1.4.png"/> <br>
 <img alt="Output5" height="150" src="Imagenes/cap1.5.png"/> <br>
-<img alt="Output6" height="150" src="Imagenes/cap1.6.png"/> 
+<img alt="Output6" height="135" src="Imagenes/cap1.6.png"/> 
+
 
 Exercise 2.-Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
@@ -112,6 +113,10 @@ This program uses composite is as well to find out the users score and acordind 
 Output
 
 <img alt="Output1" height="150" src="Imagenes/cap2.1.png"/> <br>
+<img alt="Output2" height="150" src="Imagenes/cap2.2.png"/> <br>
+<img alt="Output3" height="150" src="Imagenes/cap2.3.png"/> <br>
+<img alt="Output4" height="150" src="Imagenes/cap2.4.png"/> <br>
+
 
 Exercice 3.-
 
