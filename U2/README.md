@@ -10,14 +10,15 @@ Exersice 1.-Program that use compaired if to tell the user how much taxes they h
     float income;
     float taxToPay;
     int percentage;
-
+    int error=0;
+    
     //Ask the user for their income
     cout << "Please enter your annual rent: ";
     cin >>income;
     
     
     //Look for the tax rate acording to the income
-    if (income<10000){
+    if ((income<10000)&&(income>0)){
         percentage=5;
     }
     else if (income>=10000 && income<20000){
@@ -32,17 +33,31 @@ Exersice 1.-Program that use compaired if to tell the user how much taxes they h
     else if (income>=60000){
         percentage=45;
     }
+    else 
+    {
+        error = 1;
+    }
     
     
     //Operation of how much the user have to pay acording to the tax rate and print the result
-    taxToPay=income*percentage/100;
-    cout << "Your tax rate is: " <<percentage;  cout << "%\n";
-    cout << "You have to pay: $" <<taxToPay <<endl;
+    if (error)
+    {
+        cout<< "Please enter a valid income"<<endl;
+    }
+    else
+    {
+        cout << "Your tax rate is: " <<percentage;  cout << "%\n";
+        cout << "You have to pay: $" <<taxToPay <<endl;
+    }
+
+    //As a function it must return to a value, in this case 0
+    return 0;
+}
 ///
 
 Code explanation
 
-This program asks the user for its annual income and displays the tax rate thet corresponds and how much they have to pay, for that we implement a composite if. Firts of all we declare three variables, one for the income(income), another one for the amount they have to pay(taxToPay) and one to save the percentage of the tax rate(percentage). Then we have to ask the user for its income and save it on income variable. Then we use "if" and "else if" statement to compare the income to the tax rate. Once one of the staments is true it executes the operation to know how much the user has to pay (taxToPay=income*percentage/100). Finaly it is display on to the scren the tax rate and the amount to pay.
+This program asks the user for its annual income and displays the tax rate thet corresponds and how much they have to pay, for that we implement a composite if. Firts of all we declare four variables, one for the income(income), another one for the amount they have to pay(taxToPay), one to save the percentage of the tax rate(percentage) and a last one for control error (error=1). Then we have to ask the user for its income and save it on income variable. Then we use "if" and "else if" statement to compare the income to the tax rate. Once one of the staments is true it executes the operation to know how much the user has to pay (taxToPay=income*percentage/100), if the user enters a invalid income the program will desplay an error message. Finaly it is display on to the scren the tax rate and the amount to pay.
 
 Code
 
@@ -52,7 +67,8 @@ Output
 <img alt="Output2" height="150" src="Imagenes/cap1.2.png"/> <br>
 <img alt="Output3" height="150" src="Imagenes/cap1.3.png"/> <br>
 <img alt="Output4" height="150" src="Imagenes/cap1.4.png"/> <br>
-<img alt="Output5" height="150" src="Imagenes/cap1.5.png"/> 
+<img alt="Output5" height="150" src="Imagenes/cap1.5.png"/> <br>
+
 
 
 Exercise 2.-Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.

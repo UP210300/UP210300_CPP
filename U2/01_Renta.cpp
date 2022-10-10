@@ -26,6 +26,7 @@ int main (){
     float taxToPay;
     int percentage;
     int error=0;
+    
     //Ask the user for their income
     cout << "Please enter your annual rent: ";
     cin >>income;
