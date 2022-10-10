@@ -3,8 +3,10 @@
 **UNIT 2**
 
 Exersice 1.-Program that use compaired if to tell the user how much taxes they have to pay.
+
+Code
  
-///c++
+```c++
 
     //Declaring variables
     float income;
@@ -50,16 +52,12 @@ Exersice 1.-Program that use compaired if to tell the user how much taxes they h
         cout << "You have to pay: $" <<taxToPay <<endl;
     }
 
-    //As a function it must return to a value, in this case 0
-    return 0;
-}
-///
+```
 
 Code explanation
 
 This program asks the user for its annual income and displays the tax rate thet corresponds and how much they have to pay, for that we implement a composite if. Firts of all we declare four variables, one for the income(income), another one for the amount they have to pay(taxToPay), one to save the percentage of the tax rate(percentage) and a last one for control error (error=1). Then we have to ask the user for its income and save it on income variable. Then we use "if" and "else if" statement to compare the income to the tax rate. Once one of the staments is true it executes the operation to know how much the user has to pay (taxToPay=income*percentage/100), if the user enters a invalid income the program will desplay an error message. Finaly it is display on to the scren the tax rate and the amount to pay.
 
-Code
 
 Output
 
@@ -68,48 +66,59 @@ Output
 <img alt="Output3" height="150" src="Imagenes/cap1.3.png"/> <br>
 <img alt="Output4" height="150" src="Imagenes/cap1.4.png"/> <br>
 <img alt="Output5" height="150" src="Imagenes/cap1.5.png"/> <br>
-
-
+<img alt="Output6" height="150" src="Imagenes/cap1.6.png"/> 
 
 Exercise 2.-Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
-///c++
+Code
+
+```c++
 
     //Declaring variables
     double score;
     double money;
-    
+    string rate;
+
     //Asking the user for its score
     cout << "Please enter your score during your evaluation: ";
     cin >> score;
  
     //Look for the score range to find out how much moner they will get and display on the screen
-    if((score==0.0)||(score==0.4)||(score>=0.6)) 
+    if((score==0.0)) 
     {
-        money=score*2400;
-        cout << "Your score this year is: "<< score; cout << "\n";
-        cout << "The amout of money you will get is $" << money;
+        
+        cout << "Your score this year is unacceptable \n";
+        cout << "There are no benefits for you" <<endl;
     }
-    else {
+    else if ((score==0.4)||(score>=0.6))
+    {
+         money=score*2400;
+        rate = (score==0.4)?"acceptable": "deserving";     
+        cout << "Your score this year is: "<< rate << endl;
+        cout << "The amout of money you will get is $" << money <<endl;
+    }
+    else
+    {
         cout<< "This is not a valid score, please enter a new value" <<endl;
     }
-///
+
+```
 
 Code explanation
 
-This program uses composite is as well to find out the users score and acordind to there is a level of performance wich is rewarded with money. First we have to declare variables, one for the score(score) and another one for the omount of money they are getting (money). After this we ask the user for the information and save it on the score variable. There are only three levels of performance, each one has a number so in the if statement there is the condition that the score the user has enter must correcspond to one of those values and if it is true executes the operation to find out the amount of money the user will get in reward of its work, also it will display on the screen the score and the amount of money. However if the statement is false it will print an error mesage.
+This program uses composite is as well to find out the users score and acordind to there is a level of performance wich is rewarded with money. First we have to declare variables, one for the score(score),another one for the omount of money they are getting (money) and a satring to tell the user its rate (rete). After this we ask the user for the information and save it on the score variable. There are only three levels of performance, each one has a number so in the if statement there is the condition that the score the user has enter must correspond to one of those values and if it is true executes the operation to find out the amount of money the user will get in reward of its work, also it will display on the screen the score and the amount of money. However if the statement is false it will print an error mesage.
 
-Code
 
 Output
 
+<img alt="Output1" height="150" src="Imagenes/cap2.1.png"/> <br>
 
 Exercice 3.-
 
 
 Program that automatically calculate the price you should charge customers for entering to the game room. 
 
-///c++
+```c++
 
     //Declaring variables
     int age;
@@ -139,7 +148,7 @@ Program that automatically calculate the price you should charge customers for e
     
     //Display the amount of money the user have to pay
     cout << "You have to pay $" << price; cout <<" to enter the game room" <<endl;
-///
+```
 
 Code explanation
 
@@ -147,7 +156,7 @@ For this program firt we set two integer variables, one to find out the age of t
 
 Exercise 4.-Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
 
-///c++
+```c++
 
     // Declaring variables
     int option;
@@ -212,7 +221,7 @@ Exercise 4.-Program that ask the user if the pizza will be vegan or not, acordin
     cout << "Your order is: " << pizzaType;
     cout << " pizza with tomato sauce, mozzarella and " << ingredient;
     cout << endl;
-///
+```
 
 On this program the user has to choose between vegan or not vegan pizza. We have to set four variables, two integer type, one for the two pizza options (option) and another one for the complements (complement).   The other variables are string type, there is one for thye pizza type (pizzaType) and a second one for the complement ingredient (ingredient). Then we have to ask with pizza tipe does the user wants, after that there are two main if statements one for each type of pizza, alse the is an asing value for the variable pizzaType for the two different options. On those is statements there is anothe if clause to ask the user wich complement wants, thyen there is a nother if statement to asing  a value for ingredient. Id any of the other statements is false it is diaplay an error message. Fianlly it is display on to the screen the order of the user wich contains the type of pizza and the choosen complement.
 

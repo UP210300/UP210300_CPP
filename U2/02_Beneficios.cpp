@@ -24,19 +24,28 @@ int main (){
     //Declaring variables
     double score;
     double money;
-    
+    string rate;
+
     //Asking the user for its score
     cout << "Please enter your score during your evaluation: ";
     cin >> score;
  
     //Look for the score range to find out how much moner they will get and display on the screen
-    if((score==0.0)||(score==0.4)||(score>=0.6)) 
+    if((score==0.0)) 
     {
-        money=score*2400;
-        cout << "Your score this year is: "<< score; cout << "\n";
+        
+        cout << "Your score this year is unacceptable \n";
+        cout << "There are no benefits for you" <<endl;
+    }
+    else if ((score==0.4)||(score>=0.6))
+    {
+         money=score*2400;
+        rate = (score==0.4)?"acceptable": "deserving";     
+        cout << "Your score this year is: "<< rate << endl;
         cout << "The amout of money you will get is $" << money <<endl;
     }
-    else {
+    else
+    {
         cout<< "This is not a valid score, please enter a new value" <<endl;
     }
    
