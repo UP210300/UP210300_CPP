@@ -112,16 +112,13 @@ This program uses composite is as well to find out the users score and acordind 
 
 Output
 
-<img alt="Output1" height="150" src="Imagenes/cap2.1.png"/> <br>
-<img alt="Output2" height="150" src="Imagenes/cap2.2.png"/> <br>
-<img alt="Output3" height="150" src="Imagenes/cap2.3.png"/> <br>
-<img alt="Output4" height="150" src="Imagenes/cap2.4.png"/> <br>
+<img alt="Output2.1" height="150" src="Imagenes/cap2.1.png"/> <br>
+<img alt="Output2.2" height="150" src="Imagenes/cap2.2.png"/> <br>
+<img alt="Output2.3" height="150" src="Imagenes/cap2.3.png"/> <br>
+<img alt="Output2.4" height="150" src="Imagenes/cap2.4.png"/> <br>
 
 
-Exercice 3.-
-
-
-Program that automatically calculate the price you should charge customers for entering to the game room. 
+Exercice 3.-Program that automatically calculate the price you should charge customers for entering to the game room. 
 
 ```c++
 
@@ -163,9 +160,9 @@ For this program first we set two integer variables, one to find out the age of 
 
 Output
 
-<img alt="Output1" height="150" src="Imagenes/cap3.1.png"/> <br>
-<img alt="Output2" height="150" src="Imagenes/cap3.2.png"/> <br>
-<img alt="Output3" height="150" src="Imagenes/cap3.3.png"/> <br>
+<img alt="Output3.1" height="150" src="Imagenes/cap3.1.png"/> <br>
+<img alt="Output3.2" height="150" src="Imagenes/cap3.2.png"/> <br>
+<img alt="Output3.3" height="150" src="Imagenes/cap3.3.png"/> 
 
 Exercise 4.-Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
 
@@ -243,5 +240,54 @@ On this program the user has to choose between vegan or not vegan pizza. We have
 
 Output
 
+<img alt="Output4.1" height="150" src="Imagenes/cap4.1.png"/> <br>
+<img alt="Output4.2" height="150" src="Imagenes/cap4.2.png"/> <br>
+<img alt="Output4.3" height="150" src="Imagenes/cap4.3.png"/> <br>
+<img alt="Output4.4" height="150" src="Imagenes/cap4.4.png"/> <br>
+<img alt="Output4.5" height="150" src="Imagenes/cap4.5.png"/> 
+
+Exercise 5.-Program that allows the user to enter 6 temperatures, determine the avertage, highest and lowest temperature
+
+Code
+
+Output
+
+Exercise 6.-Program that ask the user for the product and its price then prints a receipt
+
+Code
+
+```c++
+    //Declaring variables
+    int product;
+    int cont;
+    float price;
+    float total=0;
+
+    //Do while cycle to find out the number of product and its price
+    do
+    {
+        cout << "Please enter the number of products with the same price: ";
+        cin >> product;
+        cout << "Please enter its price: ";
+        cin >> price;
+        cout << "If you want to exit type 0, if you want to keep adding products type 1: ";
+        cin >> cont;
+        total= total+ (product*price);
+
+    } while (cont != 0);
+
+    //Display the receipt 
+    cout << "Your total is: " <<total <<endl;
+
+```
+
+Code explanation
+
+Thi code is fora program that ask the user for the product and its price then prints a receipt. We declare 4 variables, 
+
+Output
+
+
+    
 
     
