@@ -283,10 +283,12 @@ Code
 
 Code explanation
 
-Thi code is fora program that ask the user for the product and its price then prints a receipt. We declare 4 variables, 
+ThiS code is for a program that ask the user for the product and its price then prints a receipt. We declare 4 variables, 
 
 Output
 
+<img alt="Output6.1" height="150" src="Imagenes/cap6.1.png"/> <br>
+<img alt="Output6.2" height="100" src="Imagenes/cap6.2.png"/> 
 
     
 
