@@ -160,9 +160,9 @@ For this program first we set two integer variables, one to find out the age of 
 
 Output
 
-<img alt="Output3.1" height="150" src="Imagenes/cap3.1.png"/> <br>
-<img alt="Output3.2" height="150" src="Imagenes/cap3.2.png"/> <br>
-<img alt="Output3.3" height="150" src="Imagenes/cap3.3.png"/> 
+<img alt="Output3.1" height="100" src="Imagenes/cap3.1.png"/> <br>
+<img alt="Output3.2" height="100" src="Imagenes/cap3.2.png"/> <br>
+<img alt="Output3.3" height="100" src="Imagenes/cap3.3.png"/> 
 
 Exercise 4.-Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
 
@@ -283,12 +283,12 @@ Code
 
 Code explanation
 
-ThiS code is for a program that ask the user for the product and its price then prints a receipt. We declare 4 variables, 
+This code is for a program that ask the user for the product and its price then prints a receipt. We declare 4 variables, two integers for the number of products(products) and the counter to keep going the cycle (cont). Then two float variables, one for the price of the product (price) and a last one for the total price (total). We also have do while cycle where the condition is that when cont is different than 0 the cycle will continue. Inside the cycle we have to ask the user the amount of products with the same price and its price, also ask if the user wants to keep adding products, if the user types 1 then the cycle continues until the user types 0, when the cycle end it is display on to the screen the total.
 
 Output
 
-<img alt="Output6.1" height="150" src="Imagenes/cap6.1.png"/> <br>
-<img alt="Output6.2" height="100" src="Imagenes/cap6.2.png"/> 
+<img alt="Output6.1" height="68" src="Imagenes/cap6.1.png"/> <br>
+<img alt="Output6.2" height="160" src="Imagenes/cap6.2.png"/> 
 
     
 
