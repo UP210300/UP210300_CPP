@@ -22,28 +22,27 @@ int main (){
     int counter=1;
     float temperature;
     float acumTemperature=0;
-    float max=0;
-    float min=9999;
+    float max=-274;
+    float min=274;
     do
     {
         cout << "Please type temperature " <<counter << ": ";
         cin >> temperature;
         acumTemperature = acumTemperature + temperature;
         counter ++;
-
-        if (temperature <= max)
+        if (temperature <= min)
         {
             min= temperature;
         }
-        else if (temperature >= min )
+        if (temperature >= max)
         {
-             =temperature;
+            max= temperature;
         }
             
 
     } while (counter <= 6);
     
-    cout << "The average temperature is " << acumTemperature/6 << ", the higher one is " << max <<" and the minimum is " << min;
+    cout << "The average temperature is " << acumTemperature/6 << ", the higher one is " << max <<" and the minimum is " << min << endl;
 
     //As a function it must return to a value, in this case 0
     return 0;

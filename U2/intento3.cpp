@@ -25,10 +25,9 @@ int main (){
     cout<< "Please enter a decimal number: \n";
     cin >> decimal;
 
-    if (decimal > 0)
+    while (decimal != 0)
     {
-     while (decimal != 0)
-     {
+   
        if (decimal%2==0)
        {
         binary= "0" + binary;
@@ -37,9 +36,6 @@ int main (){
        {
         binary= "1" + binary;
        }
-       
- 
-     }
      
     }
     cout << "Decimal: " << decimal << "\nBinary: " << binary << endl;
