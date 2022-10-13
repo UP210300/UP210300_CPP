@@ -19,17 +19,23 @@ using namespace std;
 //Main function integer type
 int main (){
 
+    //Declaring variables
     int counter=1;
     float temperature;
     float acumTemperature=0;
     float max=-274;
     float min=274;
+
+    //Loop to repeat the process 6 times
     do
     {
+        //Ask the user for the temperatures
         cout << "Please type temperature " <<counter << ": ";
         cin >> temperature;
+        //Acccumulator to add up every temperature
         acumTemperature = acumTemperature + temperature;
         counter ++;
+        //Compare every temperature to find out the highest and lowest temperature
         if (temperature <= min)
         {
             min= temperature;
@@ -41,7 +47,8 @@ int main (){
             
 
     } while (counter <= 6);
-    
+
+    //Display the results
     cout << "The average temperature is " << acumTemperature/6 << ", the higher one is " << max <<" and the minimum is " << min << endl;
 
     //As a function it must return to a value, in this case 0
