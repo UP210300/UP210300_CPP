@@ -14,7 +14,7 @@
 
 using namespace std;
 
-//Program that allows the user to enter 6 temperatures, determine the avertage, highest and lowest temperature
+//Program that allows the user to enter 6 temperatures, determine the average, highest and lowest temperature
 
 //Main function integer type
 int main (){

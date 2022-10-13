@@ -292,8 +292,7 @@ This program llows the user to enter 6 temperatures, determine the average, high
 
 Output
 
-<img alt="Output5.1" height="100" src="Imagenes/cap5.1.png"/> 
-
+<img alt="Output5.1" height="150" src="Imagenes/Cap5.1.png"/> 
 
 Exercise 6.-Program that ask the user for the product and its price then prints a receipt
 
