@@ -246,11 +246,54 @@ Output
 <img alt="Output4.4" height="150" src="Imagenes/cap4.4.png"/> <br>
 <img alt="Output4.5" height="150" src="Imagenes/cap4.5.png"/> 
 
-Exercise 5.-Program that allows the user to enter 6 temperatures, determine the avertage, highest and lowest temperature
+Exercise 5.-Program that allows the user to enter 6 temperatures, determine the average, highest and lowest temperature
 
 Code
 
+```c++
+
+    //Declaring variables
+    int counter=1;
+    float temperature;
+    float acumTemperature=0;
+    float max=-274;
+    float min=274;
+
+    //Loop to repeat the process 6 times
+    do
+    {
+        //Ask the user for the temperatures
+        cout << "Please type temperature " <<counter << ": ";
+        cin >> temperature;
+        //Acccumulator to add up every temperature
+        acumTemperature = acumTemperature + temperature;
+        counter ++;
+        //Compare every temperature to find out the highest and lowest temperature
+        if (temperature <= min)
+        {
+            min= temperature;
+        }
+        if (temperature >= max)
+        {
+            max= temperature;
+        }
+            
+
+    } while (counter <= 6);
+
+    //Display the results
+    cout << "The average temperature is " << acumTemperature/6 << ", the higher one is " << max <<" and the minimum is " << min << endl;
+
+```
+
+Code explanation 
+
+This program llows the user to enter 6 temperatures, determine the average, highest and lowest temperature, first we need five variables. An integer for the counter (counter), the other one are floating type, we need one for the temperatures (temperature), one for the accumulator (acumTemperature), lastly two to save and compare highest and lowest temperature (max=-274, min=274) *NOTE: We set this variables with this values acording to the plank temperature and absolut zero*. Then we have a do while loop with the condition (counter <= 6), while that is true we ask the user for the temperature and save on temperature, then add it on the accumulator acumTemperature, the with the two if statments compare it two find out if it is the lowest or highest temperatures. Once this loop end it is dsiplay the average temperature (divide between 6 the value of the variable acumTemperature), the highest and lowest temperature.
+
 Output
+
+<img alt="Output5.1" height="100" src="Imagenes/cap5.1.png"/> 
+
 
 Exercise 6.-Program that ask the user for the product and its price then prints a receipt
 
