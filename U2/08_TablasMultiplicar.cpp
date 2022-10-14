@@ -19,32 +19,37 @@ using namespace std;
 //Main function integer type
 int main (){
 
+    //Declaring variables
     int number;
     int lenght;
 
-
-    cout << "Please enter the number you want your times table: \n";
+    //Ask the user fot the lenght and number of times table
+    cout << "Please enter the number you want your times table: ";
     cin >> number;
-    cout << "Please enter the lengh you desire: \n";
+    cout << "Please enter the lengh you desire: ";
     cin >> lenght;
     cout <<"\n" << number << " Times table \n\n";
     
-
+    //Operations between lenght and number to create times table
     for ( int i = 1; i <= lenght; i++)
     {
-        cout << "|";
-        for (int j= 1; j <48; j++)
+        cout << "|";//Diaplay to create the side line of the table
+        for (int j= 1; j <48; j++)//Display to create the separation between each result
         {
             cout << "-";
         }
-        cout << "|";
+        cout << "|";//Diaplay to create the side line of the table
         cout << "\n";
-        cout << "|\t" << i << "\t" << "x"  << "\t" << number << "\t" << "=" << "\t" << i*number << "\t|\n";
+        cout << "|\t" << i << "\t" << "x"  << "\t" << number << "\t" << "=" << "\t" << i*number << "\t|\n"; //Disĺay the result of the operations
         
     }
-    for (int j= 1; j <50; j++)
+    for (int j= 1; j <50; j++)//Display the bottom line of the table
     {
         cout << "-";
     }
     cout << endl;
+
+  //As a function it must return to a value, in this case 0
+  return 0;
+
 }

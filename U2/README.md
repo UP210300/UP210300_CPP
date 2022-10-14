@@ -378,4 +378,50 @@ This code is for a program that that converts a decimal number to a binary numbe
 
 Output
 
+<img alt="Output7.1" height="68" src="Imagenes/cap7.1.png"/> <br>
+<img alt="Output7.2" height="68" src="Imagenes/cap7.2.png"/> 
+
+Exercise 8.-Program that ask the user for a number and gives it the times table of the lenght the user desires
+
+Code
+
+```c++
+
+    //Declaring variables
+    int number;
+    int lenght;
+
+    //Ask the user fot the lenght and number of times table
+    cout << "Please enter the number you want your times table: \n";
+    cin >> number;
+    cout << "Please enter the lengh you desire: \n";
+    cin >> lenght;
+    cout <<"\n" << number << " Times table \n\n";
+    
+    //Operations between lenght and number to create times table 
+    for ( int i = 1; i <= lenght; i++)
+    {
+        cout << "|";//Diaplay to create the side line of the table
+        for (int j= 1; j <48; j++)//Display to create the separation between each result
+        {
+            cout << "-";
+        }
+        cout << "|";//Diaplay to create the side line of the table
+        cout << "\n";
+        cout << "|\t" << i << "\t" << "x"  << "\t" << number << "\t" << "=" << "\t" << i*number << "\t|\n"; //Disĺay the result of the operations
+        
+    }
+    for (int j= 1; j <50; j++)//Display the bottom line of the table
+    {
+        cout << "-";
+    }
+    cout << endl;
+
+```
+Code explanation
+
+This program ask the user for a number and gives it the times table of the lenght the user desires. We will need two integer variables one for the number of the times table (number) and another one for the lenght(lenght). Then we ask the userfor each number and save the on to the variables. Then there is a for cycle, the fist one fot the columns of the times table that will be as long ad the value of lenght, also there is the "|" character to display the side line of the tanle. Then we have one more for loop but this one is to crete the separation between each result, after this loop we display one again the character "|" to create the other side line. Finally we have the line that does the operation and siplay every result. The las for loop is to print the bottom line of the times table.
+
+Output
+
     
