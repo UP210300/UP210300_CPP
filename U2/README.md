@@ -392,9 +392,9 @@ Code
     int lenght;
 
     //Ask the user fot the lenght and number of times table
-    cout << "Please enter the number you want your times table: \n";
+    cout << "Please enter the number you want your times table: ";
     cin >> number;
-    cout << "Please enter the lengh you desire: \n";
+    cout << "Please enter the lengh you desire: ";
     cin >> lenght;
     cout <<"\n" << number << " Times table \n\n";
     
@@ -424,4 +424,5 @@ This program ask the user for a number and gives it the times table of the lengh
 
 Output
 
+<img alt="Output8.1" height="400" src="Imagenes/cap8.1.png"/> 
     
