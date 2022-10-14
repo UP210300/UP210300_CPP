@@ -20,14 +20,19 @@ using namespace std;
 int main()
 {
 
+  //Declaring variables
   int decimal;
   string binary;
 
-  cout << "Please enter a decimal number: ";
+  //Ask the user for a number to convert
+  cout << "Decimal to binary conversion \n\n";
+  cout << "Decimal number: ";
   cin >> decimal;
 
+  //Find out if the number enter by the user is above 0
   if (decimal > 0)
   {
+    //Loop to do the conversion
     while (decimal != 0)
     {
       if (decimal % 2 == 0)
@@ -40,11 +45,15 @@ int main()
       }
       decimal= decimal/2;
     }
+    //Display the result
      cout << "Binary number: " << binary << endl;
   }
   else
   {
-    cout << "Please enter a number above 0";
+    cout << "Please enter a number above 0" <<endl;
   }
-  
+
+  //As a function it must return to a value, in this case 0
+  return 0;
+
 }

@@ -299,6 +299,7 @@ Exercise 6.-Program that ask the user for the product and its price then prints 
 Code
 
 ```c++
+
     //Declaring variables
     int product;
     int cont;
@@ -332,6 +333,49 @@ Output
 <img alt="Output6.1" height="68" src="Imagenes/cap6.1.png"/> <br>
 <img alt="Output6.2" height="160" src="Imagenes/cap6.2.png"/> 
 
-    
+Exercise 7.- Program that converts a decimal number to a binary number
+
+Code
+```c++
+
+  //Declaring variables
+  int decimal;
+  string binary;
+
+  //Ask the user for a number to convert
+  cout << "Decimal to binary conversion \n\n";
+  cout << "Decimal number: ";
+  cin >> decimal;
+
+  //Find out if the number enter by the user is above 0
+  if (decimal > 0)
+  {
+    //Loop to do the conversion
+    while (decimal != 0)
+    {
+      if (decimal % 2 == 0)
+      {
+        binary = "0" + binary;
+      }
+      else
+      {
+        binary = "1" + binary;
+      }
+      decimal= decimal/2;
+    }
+    //Display the result
+     cout << "Binary number: " << binary << endl;
+  }
+  else
+  {
+    cout << "Please enter a number above 0" <<endl;
+  }
+
+```
+Code explanation
+
+This code is for a program that that converts a decimal number to a binary number. To do this we need two variables, a integer for the decimal number (decimal) and a string type for the decimal number (binary). Then we must ask the user to enter a decimal number above 0, if the user does it incorrectly it is display a error message. If the statement is true then we have a while loop to divide the number between two to find out the binary number. Finally when the loop ends it is display the result.
+
+Output
 
     
