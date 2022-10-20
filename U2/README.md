@@ -134,7 +134,7 @@ Program that reads the users score and show its level of performance, as well as
 
 ### Code explanation
 
-<div alling="justify">
+<div align="center">
 This program uses composite is as well to find out the users score and acordind to there is a level of performance wich is rewarded with money. First we have to declare variables, one for the score(score),another one for the omount of money they are getting (money) and a satring to tell the user its rate (rete). After this we ask the user for the information and save it on the score variable. There are only three levels of performance, each one has a number so in the if statement there is the condition that the score the user has enter must correspond to one of those values and if it is true executes the operation to find out the amount of money the user will get in reward of its work, also it will display on the screen the score and the amount of money. However if the statement is false it will print an error mesage.
 </div>
 
@@ -147,9 +147,13 @@ This program uses composite is as well to find out the users score and acordind 
 
 ### Find the .cpp file
 
->[02_Benefits](https://github.com/UP210300/UP210300_CPP/blob/main/U2/02_Benefits.cpp)
+>[02_Benefits.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/02_Benefits.cpp)
 
-Eercice 3.-Program that automatically calculate the price you should charge customers for entering to the game room. 
+## Eercice 3.- Games room
+
+Program that automatically calculate the price you should charge customers for entering to the game room. 
+
+### Code
 
 ```c++
 
@@ -184,19 +188,27 @@ Eercice 3.-Program that automatically calculate the price you should charge cust
 
 ```
 
-Code explanation
+### Code explanation
 
+<div align="center">
 For this program first we set two integer variables, one to find out the age of the user (age) and a second one for tuhe price the user have to pay (price). Then we ask the user its age and save it on to the variable age. Next there is the if statement that look for the age rage that the user belong, once one of the statements is true there is an asing value for price. If any of the statements is not true it displays an error message. Finally it prints the amount of money the user has to pay to enter the room.
+</div>
 
-
-Output
+### Output
 
 <img alt="Output3.1" height="100" src="Imagenes/cap3.1.png"/> <br>
 <img alt="Output3.2" height="100" src="Imagenes/cap3.2.png"/> <br>
 <img alt="Output3.3" height="100" src="Imagenes/cap3.3.png"/> 
 
-Exercise 4.-Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
+### Find the .cpp file
 
+>[03_GamesRoom.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/03_GamesRoom.cpp)
+
+## Exercise 4.- Pizza shop
+
+Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
+
+### Code
 ```c++
 
     // Declaring variables
@@ -265,11 +277,13 @@ Exercise 4.-Program that ask the user if the pizza will be vegan or not, acordin
 
 ```
 
-Code explanation
+### Code explanation
 
+<div align="center">
 On this program the user has to choose between vegan or not vegan pizza. We have to set four variables, two integer type, one for the two pizza options (option) and another one for the complements (complement). The other variables are string type, there is one for thye pizza type (pizzaType) and a second one for the complement ingredient (ingredient). Then we have to ask with pizza tipe does the user wants, after that there are two main if statements one for each type of pizza, on each statement there is an asing value for the variable pizzaType for the two different options. There is another if clause to ask the user wich complement wants, then we have another if statement to asing  a value for the ingredient variable. If any of the other statements is false it is diaplay an error message. Fianlly it is display on to the screen the order of the user wich contains the type of pizza and the choosen complement.
+</div>
 
-Output
+### Output
 
 <img alt="Output4.1" height="150" src="Imagenes/cap4.1.png"/> <br>
 <img alt="Output4.2" height="150" src="Imagenes/cap4.2.png"/> <br>
@@ -277,9 +291,15 @@ Output
 <img alt="Output4.4" height="150" src="Imagenes/cap4.4.png"/> <br>
 <img alt="Output4.5" height="150" src="Imagenes/cap4.5.png"/> 
 
-Exercise 5.-Program that allows the user to enter 6 temperatures, determine the average, highest and lowest temperature
+### Find the .cpp file
 
-Code
+>[04_PizzaShop.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/04_PizzaShop.cpp)
+
+## Exercise 5.- Temperatures
+
+Program that allows the user to enter 6 temperatures, determine the average, highest and lowest temperature
+
+### Code
 
 ```c++
 
@@ -317,14 +337,20 @@ Code
 
 ```
 
-Code explanation 
+### Code explanation 
 
+<div align="center">                                                                                                                                       
 This program llows the user to enter 6 temperatures, determine the average, highest and lowest temperature, first we need five variables. An integer for the counter (counter), the other one are floating type, we need one for the temperatures (temperature), one for the accumulator (acumTemperature), lastly two to save and compare highest and lowest temperature (max=-274, min=274) *NOTE: We set this variables with this values acording to the plank temperature and absolut zero*. Then we have a do while loop with the condition (counter <= 6), while that is true we ask the user for the temperature and save on temperature, then add it on the accumulator acumTemperature, the with the two if statments compare it two find out if it is the lowest or highest temperatures. Once this loop end it is dsiplay the average temperature (divide between 6 the value of the variable acumTemperature), the highest and lowest temperature.
+</div>
 
-Output
+### Output
 
 <img alt="Output5.1" height="150" src="Imagenes/Cap5.1.png"/> 
 
+### Find the .cpp file
+ 
+>[0.5_Temperatures.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/05_Temperatures.cpp)
+ 
 Exercise 6.-Program that ask the user for the product and its price then prints a receipt
 
 Code
@@ -357,6 +383,7 @@ Code
 
 Code explanation
 
+<div align="center">
 This code is for a program that ask the user for the product and its price then prints a receipt. We declare 4 variables, two integers for the number of products(products) and the counter to keep going the cycle (cont). Then two float variables, one for the price of the product (price) and a last one for the total price (total). We also have do while cycle where the condition is that when cont is different than 0 the cycle will continue. Inside the cycle we have to ask the user the amount of products with the same price and its price, also ask if the user wants to keep adding products, if the user types 1 then the cycle continues until the user types 0, when the cycle end it is display on to the screen the total.
 
 Output
@@ -405,6 +432,7 @@ Code
 ```
 Code explanation
 
+<div align="center">
 This code is for a program that that converts a decimal number to a binary number. To do this we need two variables, a integer for the decimal number (decimal) and a string type for the decimal number (binary). Then we must ask the user to enter a decimal number above 0, if the user does it incorrectly it is display a error message. If the statement is true then we have a while loop to divide the number between two to find out the binary number. Finally when the loop ends it is display the result.
 
 Output
@@ -451,6 +479,7 @@ Code
 ```
 Code explanation
 
+<div align="center">
 This program ask the user for a number and gives it the times table of the lenght the user desires. We will need two integer variables one for the number of the times table (number) and another one for the lenght(lenght). Then we ask the userfor each number and save the on to the variables. Then there is a for cycle, the fist one fot the columns of the times table that will be as long ad the value of lenght, also there is the "|" character to display the side line of the tanle. Then we have one more for loop but this one is to crete the separation between each result, after this loop we display one again the character "|" to create the other side line. Finally we have the line that does the operation and siplay every result. The las for loop is to print the bottom line of the times table.
 
 Output
