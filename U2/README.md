@@ -4,7 +4,7 @@
 
 # **UNIT 2: Control structures and cycles**
  
-[Rent](#exercise-1-:-rent)•
+[Exercise 1: Rent](#exercise-1-:-rent)•
 
 </div>
 
