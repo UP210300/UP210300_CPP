@@ -4,8 +4,9 @@
 
 # **UNIT 2: Control structures and cycles**
 
-This unist is all about control structures and building blocks of computer programs that enable a program to “take decisions” an++d follow one path or another. The basic Control Structures in programming languages are:
->Conditionals (such as if): which are used to execute one or more statements if a condition is met.
+This unit is all about control structures and building blocks of computer programs that enable a program to “take decisions” and follow one path or another. 
+>The basic Control Structures in programming languages are:
+>Conditionals (such as if): which are used to execute one or more statements if a condition is met.<br>
 >Cycle (including for, do-while and while): which purpose is to repeat a statement a certain number of times or while a condition is fulfilled.
 
 Check out the following exercises taht shows the use of each control structure.
