@@ -1,5 +1,5 @@
 /*
-    Unit 2. Conditionals
+    Unit 2. Control structures and cycles
     Author: Sofia Calderon Juarez
     Date: 26/09/2022
     Description: Shows the use of compisite if

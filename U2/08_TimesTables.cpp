@@ -1,5 +1,5 @@
 /*
-    Unit 2. Conditionals
+    Unit 2. Control structures and cycles
     Author: Sofia Calderon Juarez
     Date: 12/10/2022
     Description: Shows the use of for cycle
