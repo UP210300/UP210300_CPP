@@ -134,7 +134,7 @@ Program that reads the users score and show its level of performance, as well as
 
 ### Code explanation
 
-<div align="center">
+<div align="justify">
 This program uses composite is as well to find out the users score and acordind to there is a level of performance wich is rewarded with money. First we have to declare variables, one for the score(score),another one for the omount of money they are getting (money) and a satring to tell the user its rate (rete). After this we ask the user for the information and save it on the score variable. There are only three levels of performance, each one has a number so in the if statement there is the condition that the score the user has enter must correspond to one of those values and if it is true executes the operation to find out the amount of money the user will get in reward of its work, also it will display on the screen the score and the amount of money. However if the statement is false it will print an error mesage.
 </div>
 
@@ -190,7 +190,7 @@ Program that automatically calculate the price you should charge customers for e
 
 ### Code explanation
 
-<div align="center">
+<div align="justify">
 For this program first we set two integer variables, one to find out the age of the user (age) and a second one for tuhe price the user have to pay (price). Then we ask the user its age and save it on to the variable age. Next there is the if statement that look for the age rage that the user belong, once one of the statements is true there is an asing value for price. If any of the statements is not true it displays an error message. Finally it prints the amount of money the user has to pay to enter the room.
 </div>
 
@@ -279,7 +279,7 @@ Program that ask the user if the pizza will be vegan or not, acording to that th
 
 ### Code explanation
 
-<div align="center">
+<div align="justify">
 On this program the user has to choose between vegan or not vegan pizza. We have to set four variables, two integer type, one for the two pizza options (option) and another one for the complements (complement). The other variables are string type, there is one for thye pizza type (pizzaType) and a second one for the complement ingredient (ingredient). Then we have to ask with pizza tipe does the user wants, after that there are two main if statements one for each type of pizza, on each statement there is an asing value for the variable pizzaType for the two different options. There is another if clause to ask the user wich complement wants, then we have another if statement to asing  a value for the ingredient variable. If any of the other statements is false it is diaplay an error message. Fianlly it is display on to the screen the order of the user wich contains the type of pizza and the choosen complement.
 </div>
 
@@ -339,7 +339,7 @@ Program that allows the user to enter 6 temperatures, determine the average, hig
 
 ### Code explanation 
 
-<div align="center">                                                                                                                                       
+<div align="justify">                                                                                                                                       
 This program llows the user to enter 6 temperatures, determine the average, highest and lowest temperature, first we need five variables. An integer for the counter (counter), the other one are floating type, we need one for the temperatures (temperature), one for the accumulator (acumTemperature), lastly two to save and compare highest and lowest temperature (max=-274, min=274) *NOTE: We set this variables with this values acording to the plank temperature and absolut zero*. Then we have a do while loop with the condition (counter <= 6), while that is true we ask the user for the temperature and save on temperature, then add it on the accumulator acumTemperature, the with the two if statments compare it two find out if it is the lowest or highest temperatures. Once this loop end it is dsiplay the average temperature (divide between 6 the value of the variable acumTemperature), the highest and lowest temperature.
 </div>
 
