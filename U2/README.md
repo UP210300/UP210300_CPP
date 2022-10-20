@@ -94,13 +94,11 @@ This program asks the user for its annual income and displays the tax rate thet 
 
 >[01_Renta.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/01_Renta.cpp)
 
-</div>
-
-##Exercise 2.- Benefits
+## Exercise 2.- Benefits
 
 Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
-###Code
+### Code
 
 ```c++
 
@@ -134,13 +132,13 @@ Program that reads the users score and show its level of performance, as well as
 
 ```
 
-###Code explanation
+### Code explanation
 
 <div alling="justify">
 This program uses composite is as well to find out the users score and acordind to there is a level of performance wich is rewarded with money. First we have to declare variables, one for the score(score),another one for the omount of money they are getting (money) and a satring to tell the user its rate (rete). After this we ask the user for the information and save it on the score variable. There are only three levels of performance, each one has a number so in the if statement there is the condition that the score the user has enter must correspond to one of those values and if it is true executes the operation to find out the amount of money the user will get in reward of its work, also it will display on the screen the score and the amount of money. However if the statement is false it will print an error mesage.
 </div>
 
-###Output
+### Output
 
 <img alt="Output2.1" height="150" src="Imagenes/cap2.1.png"/> <br>
 <img alt="Output2.2" height="150" src="Imagenes/cap2.2.png"/> <br>
@@ -150,6 +148,7 @@ This program uses composite is as well to find out the users score and acordind 
 ### Find the .cpp file
 
 >[02_Benefits]()
+
 Eercice 3.-Program that automatically calculate the price you should charge customers for entering to the game room. 
 
 ```c++
