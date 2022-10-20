@@ -8,8 +8,7 @@
 
 </div>
 
-## Exercise 1
-### Rent
+## Exercise 1 Rent
 
 Program that use compaired if to tell the user how much taxes they have to pay.
 
