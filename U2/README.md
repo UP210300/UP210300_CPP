@@ -76,7 +76,7 @@ Program that use compaired if to tell the user how much taxes they have to pay.
 
 ### Code explanation
 
-<div class=text-justify> 
+<div align="justify"> 
 This program asks the user for its annual income and displays the tax rate thet corresponds and how much they have to pay, for that we implement a composite if. Firts of all we declare four variables, one for the income(income), another one for the amount they have to pay(taxToPay), one to save the percentage of the tax rate(percentage) and a last one for control error (error=1). Then we have to ask the user for its income and save it on income variable. Then we use "if" and "else if" statement to compare the income to the tax rate. Once one of the staments is true it executes the operation to know how much the user has to pay (taxToPay=income*percentage/100), if the user enters a invalid income the program will desplay an error message. Finaly it is display on to the scren the tax rate and the amount to pay.
 </div>
 
