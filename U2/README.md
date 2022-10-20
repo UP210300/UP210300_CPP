@@ -4,11 +4,12 @@
 
 # **UNIT 2: Control structures and cycles**
  
-[Exercise 1: Rent](#exercise-1:-rent)•
+[Rent](#rent)•
 
 </div>
 
-## Exercise 1: Rent
+## Exercise 1
+### Rent
 
 Program that use compaired if to tell the user how much taxes they have to pay.
 
