@@ -1,10 +1,16 @@
 # UP210300_CPP
 
-**UNIT 2**
+<div align="center">
 
-Exersice 1.-Program that use compaired if to tell the user how much taxes they have to pay.
+# **UNIT 2: Control structures and cycles**
 
-Code
+</div>
+
+## Exersice 1
+
+Program that use compaired if to tell the user how much taxes they have to pay.
+
+### Code
  
 ```c++
 
@@ -54,12 +60,12 @@ Code
 
 ```
 
-Code explanation
+### Code explanation
 
 This program asks the user for its annual income and displays the tax rate thet corresponds and how much they have to pay, for that we implement a composite if. Firts of all we declare four variables, one for the income(income), another one for the amount they have to pay(taxToPay), one to save the percentage of the tax rate(percentage) and a last one for control error (error=1). Then we have to ask the user for its income and save it on income variable. Then we use "if" and "else if" statement to compare the income to the tax rate. Once one of the staments is true it executes the operation to know how much the user has to pay (taxToPay=income*percentage/100), if the user enters a invalid income the program will desplay an error message. Finaly it is display on to the scren the tax rate and the amount to pay.
 
 
-Output
+### Output
 
 <img alt="Output1" height="150" src="Imagenes/cap1.1.png"/> <br>
 <img alt="Output2" height="150" src="Imagenes/cap1.2.png"/> <br>
@@ -68,6 +74,11 @@ Output
 <img alt="Output5" height="150" src="Imagenes/cap1.5.png"/> <br>
 <img alt="Output6" height="135" src="Imagenes/cap1.6.png"/> 
 
+### Find the .cpp file
+
+>[01_Renta.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/01_Renta.cpp)
+
+</div>
 
 Exercise 2.-Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
