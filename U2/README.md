@@ -3,12 +3,14 @@
 <div align="center">
 
 # **UNIT 2: Control structures and cycles**
+
+This unit is all about control structures using conditionals (such as if) and cycles (including for, do-while and while) to buil blocks of computer programs to take decisions and follow one path or another. Check out the following exercises taht shows the use of each control structure.
  
 [Rent](#rent)•
 
 </div>
 
-## Exercise 1 Rent
+## Exercise 1.- Rent
 
 Program that use compaired if to tell the user how much taxes they have to pay.
 
