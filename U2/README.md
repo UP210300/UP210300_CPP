@@ -16,8 +16,8 @@ This unit is all about control structures and building blocks of computer progra
  
 Check out the following exercises taht shows the use of each control structure.
  
-[Rent](#rent)•
-[Benefits](#benefits)•
+[Rent](https://github.com/UP210300/UP210300_CPP/tree/main/U2#rent)•
+[Benefits](https://github.com/UP210300/UP210300_CPP/tree/main/U2#benefits)•
 [Games room](#games-room)•
 [Pizza shop](#pizza-shop)•
 [Temperatures](#temperatures)•
