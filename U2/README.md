@@ -18,10 +18,17 @@ Check out the following exercises taht shows the use of each control structure.
  
 [Rent](#rent)•
 [Benefits](#benefits)•
+[Games room](#games-room)•
+[Pizza shop](#pizza-shop)•
+[Temperatures](#temperatures)•
+[Receipt](#receipt)•
+[Conversions](#conversions)•
+[Times tables](#times-tables)•
+[Bisection method](#bisection-method)
 
 </div>
-
-## Exercise 1.- Rent
+## *Rent* <br> 
+## Exercise 1
 
 Program that use compaired if to tell the user how much taxes they have to pay.
 
@@ -94,7 +101,8 @@ This program asks the user for its annual income and displays the tax rate thet 
 
 >[01_Renta.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/01_Rent.cpp)
 
-## Exercise 2.- Benefits
+## *Benefits* <br>
+## Exercise 2
 
 Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
 
@@ -149,7 +157,8 @@ This program uses composite is as well to find out the users score and acordind 
 
 >[02_Benefits.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/02_Benefits.cpp)
 
-## Eercice 3.- Games room
+## *Games room* <br>
+## Eercice 3
 
 Program that automatically calculate the price you should charge customers for entering to the game room. 
 
@@ -204,11 +213,13 @@ For this program first we set two integer variables, one to find out the age of 
 
 >[03_GamesRoom.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/03_GamesRoom.cpp)
 
-## Exercise 4.- Pizza shop
+## *Pizza shop* <br>
+## Exercise 4
 
 Program that ask the user if the pizza will be vegan or not, acording to that the user can choose a complement for its pizza
 
 ### Code
+
 ```c++
 
     // Declaring variables
@@ -295,7 +306,8 @@ On this program the user has to choose between vegan or not vegan pizza. We have
 
 >[04_PizzaShop.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/04_PizzaShop.cpp)
 
-## Exercise 5.- Temperatures
+## *Temperatures* <br>
+## Exercise 5
 
 Program that allows the user to enter 6 temperatures, determine the average, highest and lowest temperature
 
@@ -350,8 +362,9 @@ This program llows the user to enter 6 temperatures, determine the average, high
 ### Find the .cpp file
  
 >[0.5_Temperatures.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/05_Temperatures.cpp)
- 
-## Exercise 6.- Receipt
+
+## *Receipt* <br>
+## Exercise 6
 
 Program that ask the user for the product and its price then prints a receipt
 
@@ -398,7 +411,8 @@ Find the .cpp file
 
 >[0.6_Receipt.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/06_Receipt.cpp)
 
-## Exercise 7.- Conversions
+## *Conversions* <br>
+## Exercise 7
 
 Program that converts a decimal number to a binary number
 
@@ -454,7 +468,8 @@ This code is for a program that that converts a decimal number to a binary numbe
  
 >[0.7_Conversions.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/07_Conversions.cpp)
 
-## Exercise 8.- Times tables
+## *Times tables* <br>
+## Exercise 8
 
 Program that ask the user for a number and gives it the times table of the lenght the user desires
 
@@ -506,3 +521,6 @@ This program ask the user for a number and gives it the times table of the lengh
 ### Find the .cpp file
 
 >[0.8_TimesTables](https://github.com/UP210300/UP210300_CPP/blob/main/U2/08_TimesTables.cpp)
+
+## *Bisection method* <br>
+## Exercise 9
