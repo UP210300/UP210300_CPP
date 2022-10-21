@@ -28,7 +28,7 @@ Check out the following exercises taht shows the use of each control structure.
 
 </div>
 
-## *Rent* <br> 
+## Rent <br> 
 ## Exercise 1
 
 Program that use compaired if to tell the user how much taxes they have to pay.
