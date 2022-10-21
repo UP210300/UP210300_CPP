@@ -351,9 +351,11 @@ This program llows the user to enter 6 temperatures, determine the average, high
  
 >[0.5_Temperatures.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/05_Temperatures.cpp)
  
-Exercise 6.-Program that ask the user for the product and its price then prints a receipt
+## Exercise 6.- Receipt
 
-Code
+Program that ask the user for the product and its price then prints a receipt
+
+### Code
 
 ```c++
 
@@ -381,19 +383,26 @@ Code
 
 ```
 
-Code explanation
+### Code explanation
 
-<div align="center">
+<div align="justify">
 This code is for a program that ask the user for the product and its price then prints a receipt. We declare 4 variables, two integers for the number of products(products) and the counter to keep going the cycle (cont). Then two float variables, one for the price of the product (price) and a last one for the total price (total). We also have do while cycle where the condition is that when cont is different than 0 the cycle will continue. Inside the cycle we have to ask the user the amount of products with the same price and its price, also ask if the user wants to keep adding products, if the user types 1 then the cycle continues until the user types 0, when the cycle end it is display on to the screen the total.
+</div>
 
-Output
+### Output
 
 <img alt="Output6.1" height="68" src="Imagenes/cap6.1.png"/> <br>
 <img alt="Output6.2" height="160" src="Imagenes/cap6.2.png"/> 
 
-Exercise 7.- Program that converts a decimal number to a binary number
+Find the .cpp file
 
-Code
+>[0.6_Receipt.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/06_Receipt.cpp)
+
+## Exercise 7.- Conversions
+
+Program that converts a decimal number to a binary number
+
+### Code
 ```c++
 
   //Declaring variables
@@ -430,19 +439,26 @@ Code
   }
 
 ```
-Code explanation
+### Code explanation
 
 <div align="center">
 This code is for a program that that converts a decimal number to a binary number. To do this we need two variables, a integer for the decimal number (decimal) and a string type for the decimal number (binary). Then we must ask the user to enter a decimal number above 0, if the user does it incorrectly it is display a error message. If the statement is true then we have a while loop to divide the number between two to find out the binary number. Finally when the loop ends it is display the result.
+</div>
 
-Output
+### Output
 
 <img alt="Output7.1" height="68" src="Imagenes/cap7.1.png"/> <br>
 <img alt="Output7.2" height="68" src="Imagenes/cap7.2.png"/> 
 
-Exercise 8.-Program that ask the user for a number and gives it the times table of the lenght the user desires
+### Find the .cpp file
+ 
+>[0.7_Conversions.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/07_Conversions.cpp)
 
-Code
+## Exercise 8.- Times tables
+
+Program that ask the user for a number and gives it the times table of the lenght the user desires
+
+### Code
 
 ```c++
 
@@ -477,12 +493,16 @@ Code
     cout << endl;
 
 ```
-Code explanation
+### Code explanation
 
 <div align="center">
 This program ask the user for a number and gives it the times table of the lenght the user desires. We will need two integer variables one for the number of the times table (number) and another one for the lenght(lenght). Then we ask the userfor each number and save the on to the variables. Then there is a for cycle, the fist one fot the columns of the times table that will be as long ad the value of lenght, also there is the "|" character to display the side line of the tanle. Then we have one more for loop but this one is to crete the separation between each result, after this loop we display one again the character "|" to create the other side line. Finally we have the line that does the operation and siplay every result. The las for loop is to print the bottom line of the times table.
+</div>
 
-Output
+### Output
 
 <img alt="Output8.1" height="400" src="Imagenes/cap8.1.png"/> 
     
+### Find the .cpp file
+
+>[0.8_TimesTables](https://github.com/UP210300/UP210300_CPP/blob/main/U2/08_TimesTables.cpp)
