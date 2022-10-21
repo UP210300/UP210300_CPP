@@ -2,4 +2,4 @@
 
 <div align="center">
 
-# **UNIT 1: Programing introduction**
+# **UNIT 1: Programming introduction**
