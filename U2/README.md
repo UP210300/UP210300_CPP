@@ -28,7 +28,7 @@ Check out the following exercises taht shows the use of each control structure.
 
 </div>
 
-## Rent <br> 
+## *Rent* <br> 
 ## Exercise 1
 
 Program that use compaired if to tell the user how much taxes they have to pay.
@@ -102,7 +102,7 @@ This program asks the user for its annual income and displays the tax rate thet 
 
 >[01_Renta.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/01_Rent.cpp)
 
-## Benefits <br>
+## *Benefits* <br>
 ## Exercise 2
 
 Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
