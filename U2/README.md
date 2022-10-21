@@ -525,3 +525,4 @@ This program ask the user for a number and gives it the times table of the lengh
 
 ## *Bisection method* <br>
 ## Exercise 9
+
