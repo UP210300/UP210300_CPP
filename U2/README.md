@@ -456,7 +456,7 @@ Program that converts a decimal number to a binary number
 ```
 ### Code explanation
 
-<div align="center">
+<div align="justify">
 This code is for a program that that converts a decimal number to a binary number. To do this we need two variables, a integer for the decimal number (decimal) and a string type for the decimal number (binary). Then we must ask the user to enter a decimal number above 0, if the user does it incorrectly it is display a error message. If the statement is true then we have a while loop to divide the number between two to find out the binary number. Finally when the loop ends it is display the result.
 </div>
 
@@ -511,7 +511,7 @@ Program that ask the user for a number and gives it the times table of the lengh
 ```
 ### Code explanation
 
-<div align="center">
+<div align="justify">
 This program ask the user for a number and gives it the times table of the lenght the user desires. We will need two integer variables one for the number of the times table (number) and another one for the lenght(lenght). Then we ask the userfor each number and save the on to the variables. Then there is a for cycle, the fist one fot the columns of the times table that will be as long ad the value of lenght, also there is the "|" character to display the side line of the tanle. Then we have one more for loop but this one is to crete the separation between each result, after this loop we display one again the character "|" to create the other side line. Finally we have the line that does the operation and siplay every result. The las for loop is to print the bottom line of the times table.
 </div>
 
@@ -636,15 +636,15 @@ int main (){
 ```
 ### Code explanation
 
-<div align="center">
+<div align="justify">
 This program uses the bisection method, this is an approximation method to find the roots of the given equation by repeatedly dividing the interval. To do this we need a function outside the main function ( solveEquation(float worth) ) this is a float type of function and its value returns to the worth variable that is is also a float type. Then we have the main function in to wich we fist have to declare several variables to store the value of a (a),b(b),c(c), the value of y (ya,yb,yc),an error control variable(error), and a variable to start the for cycle (i). Fist we ask the user for the value of a and b, then the solveEcuation funciond and the operation asignet to c is executed. Then the formula is applied  and If the the statement (yb * ya < 0) || (ya * yc < 0) || (yc * yb < 0)) is true then means the signs are opposites so there is a root in between, then cuts the distance in between the locations in half, check both extremes to see if the signs are opposites again. This process is repeated until the formula reaches an approximation to 0-+0.01), finally prints out the table listing all the process behind calculating the root. However if the statement is not true means the signs are the same, there is no root between them and displays an error message. 
 </div>
 
 ### Output
 
 <img alt="Output9.1" height="400" src="Imagenes/cap9.1.png"/> <br>
-<img alt="Output9.2" height="400" src="Imagenes/cap9.2.png"/> 
+<img alt="Output9.2" height="100" src="Imagenes/cap9.2.png"/> 
 
 ### Find the .cpp file
 
->[0.9_BisectionMethod]()
+>[0.9_BisectionMethod](https://github.com/UP210300/UP210300_CPP/blob/main/U2/09_BisectionMethod.cpp)
