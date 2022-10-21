@@ -526,3 +526,108 @@ This program ask the user for a number and gives it the times table of the lengh
 ## *Bisection method* <br>
 ## Exercise 9
 
+Program that uses the Bisection method
+
+### Code
+
+```c++
+
+//Function that solves the ecuation
+float solveEquation(float worth) {
+        return pow(worth,2) - worth- 12;
+    }
+
+//Main function integer type
+int main (){
+
+    //Declaring variables
+    float a;
+    float b;
+    float c = (a+b)/2;
+    float ya = solveEquation(a);
+    float yb = solveEquation(b);
+    float yc = solveEquation(c);
+    float error = 0.01;
+    int i;
+
+     cout << "Root fot the function x²+x-12 \n\n";
+
+    //Ask the user to enter the value of the variables
+    cout << "Enter a value of (a): ";
+    cin >>  a;
+    cout << endl;
+    cout << "Enter a value of (b): ";
+    cin >>  b;
+    cout << "\n";
+
+    
+    if ((yb * ya < 0) || (ya * yc < 0) || (yc * yb < 0)){
+
+        for (i = 1, i = 0; i < 121; i++)
+    {      
+    cout << "_";
+    }
+    cout << "\n";
+    
+    cout     << "|" 
+             << "\t" << "a" << "\t"
+             << "\t" << "b" << "\t"
+             << "\t" << "c" << "\t"
+             << "\t" << "ya" << "\t" << "\t"
+             << "\t" << "yb" << "\t"
+             << "\t" << "\t" << "yc" << "\t" << "\t" 
+             << "|" << endl;
+             cout << "|";
+        for (i = 1, i = 0; i < 119; i++)
+        {
+            cout << "_";
+        }
+        cout << "|";
+    //Loop to keep solving the ecuation
+    do
+    {
+            c = (a+b)/2;
+            ya = solveEquation(a);
+            yb = solveEquation(b);
+            yc = solveEquation(c);
+        if (ya*yc<0)
+        {
+            b = c;
+        }
+        else if (yc*yb<0)
+        {
+            a = c;
+        }
+
+    cout << "\n";
+    cout << fixed;
+     //Print table with the results of the ecuation solved
+    cout << setprecision(3)<< "|" 
+             << "\t" << a << "\t"
+             << "\t" << b << "\t"
+             << "\t" << c << "\t"
+             << "\t" << ya << "\t" << "\t"
+             << "\t" << yb << "\t"
+             << "\t" << "\t" << yc << "\t" << "\t" 
+             << "|" << endl;
+             cout << "|";
+            
+    for (i = 1, i = 0; i < 119; i++)
+            {
+                cout << "_";
+            }
+            cout << "|";
+    } while (abs(yc)>= error);
+
+    }
+    else {
+        
+        cout << "The root does not exist" <<endl;
+
+    }
+    return 0;    
+
+```
+### Code explanation
+
+This program uses the bisection method, this is an approximation method to find the roots of the given equation by repeatedly dividing the interval. To do this we need a function outside the main function ( solveEquation(float worth) ) this is a float type of function and its value returns to the worth variable that is is also a float type. Then we have the main function in to wich we fist have to declare several variables to store the value of a,b,c, the value of y,an error control variable

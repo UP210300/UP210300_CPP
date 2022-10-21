@@ -9,7 +9,7 @@
 #include <iostream>
 //LIbrary for the use of printf and scanf
 #include <stdio.h>
-//Library for complex operations
+//Library 
 #include <cmath>
 //Library to control the decimal precision
 #include <iomanip>
@@ -31,14 +31,14 @@ int main (){
     //Declaring variables
     float a;
     float b;
-    float c;
-    float ya;
-    float yb;
-    float yc;
+    float c = (a+b)/2;
+    float ya = solveEquation(a);
+    float yb = solveEquation(b);
+    float yc = solveEquation(c);
     float error = 0.01;
     int i;
 
-    cout << "Root fot the function x²+x-12 \n\n";
+     cout << "Root fot the function x²+x-12 \n\n";
 
     //Ask the user to enter the value of the variables
     cout << "Enter a value of (a): ";
@@ -48,14 +48,9 @@ int main (){
     cin >>  b;
     cout << "\n";
 
-    //Look if the ecuation has a root
-    c = (a+b)/2;
-    ya = solveEquation(a);
-    yb = solveEquation(b);
-    yc = solveEquation(c);
     
     if ((yb * ya < 0) || (ya * yc < 0) || (yc * yb < 0)){
-        //Print table header
+
         for (i = 1, i = 0; i < 121; i++)
     {      
     cout << "_";
@@ -118,7 +113,6 @@ int main (){
         cout << "The root does not exist" <<endl;
 
     }
-    //As a function it must return to a value, in this case 0
     return 0;    
 
 }
