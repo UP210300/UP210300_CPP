@@ -102,7 +102,7 @@ This program asks the user for its annual income and displays the tax rate thet 
 
 >[01_Renta.cpp](https://github.com/UP210300/UP210300_CPP/blob/main/U2/01_Rent.cpp)
 
-## *Benefits* <br>
+## Benefits <br>
 ## Exercise 2
 
 Program that reads the users score and show its level of performance, as well as the amount of money thet the user will get.
