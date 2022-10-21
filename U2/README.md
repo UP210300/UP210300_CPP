@@ -27,6 +27,7 @@ Check out the following exercises taht shows the use of each control structure.
 [Bisection method](#bisection-method)
 
 </div>
+
 ## *Rent* <br> 
 ## Exercise 1
 
