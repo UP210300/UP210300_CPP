@@ -358,7 +358,7 @@ This program llows the user to enter 6 temperatures, determine the average, high
 
 ### Output
 
-<img alt="Output5.1" height="150" src="Imagenes/Cap5.1.png"/> 
+<img alt="Output5.1" height="150" src="Imagenes/cap5.1.png"/> 
 
 ### Find the .cpp file
  
@@ -543,14 +543,14 @@ int main (){
     //Declaring variables
     float a;
     float b;
-    float c = (a+b)/2;
-    float ya = solveEquation(a);
-    float yb = solveEquation(b);
-    float yc = solveEquation(c);
+    float c;
+    float ya;
+    float yb;
+    float yc;
     float error = 0.01;
     int i;
 
-     cout << "Root fot the function x²+x-12 \n\n";
+    cout << "Root fot the function x²+x-12 \n\n";
 
     //Ask the user to enter the value of the variables
     cout << "Enter a value of (a): ";
@@ -560,9 +560,14 @@ int main (){
     cin >>  b;
     cout << "\n";
 
+    //Look if the ecuation has a root
+    c = (a+b)/2;
+    ya = solveEquation(a);
+    yb = solveEquation(b);
+    yc = solveEquation(c);
     
     if ((yb * ya < 0) || (ya * yc < 0) || (yc * yb < 0)){
-
+        //Print table header
         for (i = 1, i = 0; i < 121; i++)
     {      
     cout << "_";
@@ -625,9 +630,21 @@ int main (){
         cout << "The root does not exist" <<endl;
 
     }
-    return 0;    
+    //As a function it must return to a value, in this case 0
+    return 0;   
 
 ```
 ### Code explanation
 
-This program uses the bisection method, this is an approximation method to find the roots of the given equation by repeatedly dividing the interval. To do this we need a function outside the main function ( solveEquation(float worth) ) this is a float type of function and its value returns to the worth variable that is is also a float type. Then we have the main function in to wich we fist have to declare several variables to store the value of a,b,c, the value of y,an error control variable
+<div align="center">
+This program uses the bisection method, this is an approximation method to find the roots of the given equation by repeatedly dividing the interval. To do this we need a function outside the main function ( solveEquation(float worth) ) this is a float type of function and its value returns to the worth variable that is is also a float type. Then we have the main function in to wich we fist have to declare several variables to store the value of a (a),b(b),c(c), the value of y (ya,yb,yc),an error control variable(error), and a variable to start the for cycle (i). Fist we ask the user for the value of a and b, then the solveEcuation funciond and the operation asignet to c is executed. Then the formula is applied  and If the the statement (yb * ya < 0) || (ya * yc < 0) || (yc * yb < 0)) is true then means the signs are opposites so there is a root in between, then cuts the distance in between the locations in half, check both extremes to see if the signs are opposites again. This process is repeated until the formula reaches an approximation to 0-+0.01), finally prints out the table listing all the process behind calculating the root. However if the statement is not true means the signs are the same, there is no root between them and displays an error message. 
+</div>
+
+### Output
+
+<img alt="Output9.1" height="400" src="Imagenes/cap9.1.png"/> <br>
+<img alt="Output9.2" height="400" src="Imagenes/cap9.2.png"/> 
+
+### Find the .cpp file
+
+>[0.9_BisectionMethod]()
