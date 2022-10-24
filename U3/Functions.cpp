@@ -1,5 +1,5 @@
 /*
-Unit 3. Arrays and functions
+Unit 3. Functions
 Author: Sofia Calderon Juarez
 Date: 20/10/2022
 Description: Function test
