@@ -23,6 +23,7 @@ void displayChange(string);
 int quinientos=0, docientos=0, cien=0;
 int cincuenta=0, veinte=0;
 int diez=0, cinco=0, dos=0, uno=0;
+int residue;
  
 //Main function integer type
 int main (){
@@ -38,25 +39,39 @@ int main (){
    return 0;
  
 }
+int calculo(int bills, int getmoney){
+    int result;
+    result = getmoney/bills;
+    residue=getmoney%bills;
+    getmoney= residue;
+    return result;
+}
 
-void getChange(int money){
-    int residue;
-    quinientos= money/500;
-    residue= money%500;
-    docientos= residue/200;
-    residue= residue%200;
-    cien= residue/100;
-    residue= residue%100;
-    cincuenta= residue/50;
-    residue= residue%50;
-    veinte= veinte/20;
-    residue= residue%20;
-    diez= residue/10;
-    residue= residue%10;
-    cinco= residue/5;
-    residue= residue%5;
-    dos= residue/2;
-    residue= residue%2;
-    uno= residue/1;
-    residue= residue%1;
+void getChange(int getmoney){
+
+    quinientos= calculo(500,getmoney);
+    docientos= calculo(200,residue);
+    cien= calculo(100,residue);
+    cincuenta= calculo(50,residue);
+    veinte= calculo(20,residue);
+    diez= calculo(10,residue);
+    cinco= calculo(5,residue);
+    dos= calculo(2,residue);
+    uno= calculo(1,residue);
+}
+
+void displayChange(string){
+    
+    cout << "Billetes: \n";
+    cout << "Quinientos: " << quinientos <<endl;
+    cout << "Docientos: " << docientos <<endl;
+    cout << "Cien: " << cien <<endl;
+    cout << "Cincuenta: " << cincuenta <<endl;
+    cout << "Veinte: " << veinte <<endl;
+    cout << "Monedas: \n"; 
+    cout << "Diez: " << diez <<endl;
+    cout << "Cinco: " << cinco <<endl;
+    cout << "Dos: " << dos <<endl;
+    cout << "Uno: " << uno <<endl; 
+
 }
