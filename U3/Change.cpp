@@ -16,9 +16,12 @@ using namespace std;
  
 //Program that gives change to the user
 
+int calculo(int);
 void getChange(int);
 void getCoins(int);
 void displayChange(string);
+void displayChangeCoins(string);
+void displayOption(string);
 
 int quinientos=0, docientos=0, cien=0;
 int cincuenta=0, veinte=0;
@@ -29,13 +32,29 @@ int residue;
 int main (){
 
     int money;
+    string choose;
     
     cout << "Please enter the amount of money: ";
     cin >> money;
+    cout << "Please choose: \na)Bills and coins \nb)Coins \nYour choice: ";
+    cin >> choose;
 
-    getChange(money);
-    displayChange("Total");
-   
+    if (choose=="a")
+    {
+        getChange(money); 
+        displayChange("Total");
+    }
+    if (choose=="b")
+    {
+        getCoins(money); 
+        displayChangeCoins("Total");
+    }
+    else
+    {
+        cout << "Error, Please enter a valid option";
+    }
+    
+    
    return 0;
  
 }
@@ -60,6 +79,14 @@ void getChange(int getmoney){
     uno= calculo(1,residue);
 }
 
+void getCoins(int getmoney){
+
+    diez= calculo(10,getmoney);
+    cinco= calculo(5,residue);
+    dos= calculo(2,residue);
+    uno= calculo(1,residue);
+}
+
 void displayChange(string){
     
     cout << "Billetes: \n";
@@ -75,3 +102,15 @@ void displayChange(string){
     cout << "Uno: " << uno <<endl; 
 
 }
+
+void displayChangeCoins(string){
+    
+    cout << "Monedas: \n"; 
+    cout << "Diez: " << diez <<endl;
+    cout << "Cinco: " << cinco <<endl;
+    cout << "Dos: " << dos <<endl;
+    cout << "Uno: " << uno <<endl; 
+
+}
+
+
