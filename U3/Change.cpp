@@ -44,14 +44,14 @@ int main (){
         getChange(money); 
         displayChange("Total");
     }
-    if (choose=="b")
+    else if (choose=="b")
     {
         getCoins(money); 
         displayChangeCoins("Total");
     }
     else
     {
-        cout << "Error, Please enter a valid option";
+        cout << "Error, Please enter a valid option" <<endl;
     }
     
     
