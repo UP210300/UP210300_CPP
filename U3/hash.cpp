@@ -16,25 +16,25 @@ Description:
 using namespace std;
  
 //Program that prints hash sing
- 
+
 //Main function integer type
 int main (){
 
-    int hash[11][11];
+    int hash[9][11];
 
-    for (int row = 0; row < 11; row++)
+    for (int row = 0; row < 9; row++)
     {
         for (int col = 0; col < 11; col++)
         {
-            if ((row%2==0) && (col!=3) && (col!=7))
+            if ((row!=2) && (row!=5) && (col!=3) && (col!=7))
             {
-                cout << "x";
+                cout << " ";
             }
-            if ((row%2==0) && (col==3 || col==7))
+            else if ((col==3) || (col==7))
             {
                 cout << "|";
             }
-            if (row==3 || row==7)
+            else if ((row==2) || (row==5))
             {
                 cout << "_"; 
             }
@@ -42,8 +42,6 @@ int main (){
         }
         cout << endl;
     }
-    
 
-   
    return 0;
 }
