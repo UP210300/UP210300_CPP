@@ -35,7 +35,7 @@ int main (){
                 cout << "|";
             }
             else if ((row==2) || (row==5))
-            {
+            {   
                 cout << "_"; 
             }
             

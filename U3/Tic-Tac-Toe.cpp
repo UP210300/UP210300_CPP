@@ -18,42 +18,43 @@ using namespace std;
 //Program that allows you to play Tic-Tac-Toe
 
 //
-void diplayHash(string);
-void selectMove(int);
+void displayHash();
+int selectMove(int);
 void displayMove(int);
-void asingMove(int);
+void asingMoveCoordinate(int);
+bool testBusyBox(int);
 
-int move;
 int row;
 int col;
 char playersTurn;
 char moveValue;
-char possibleMoves[3][3]={"1","2","3","4","5","6","7","8","9"};
+char possibleMoves[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 
 
 //Main function integer type
 int main (){
    
+   int move;
    bool busyBox= true;
     do
     {
-        move= selectMove();
+        move= selectMove(move);
         busyBox= testBusyBox(move);
         if (busyBox==false)
         {
-            asingMove(move);
+            asingMoveCoordinate(move);
             system("clear");
             displayHash();
         }
         
-    } while (busyBox== true);
+    } while (busyBox == true);
     
 
    return 0;
  
 }
 
-void diplayHash() {
+void displayHash() {
 
     int hash[9][11];
 
@@ -79,14 +80,17 @@ void diplayHash() {
     }
 }
 
-void selectMove(){
+int selectMove(){
+
+    int move;
+
     do
     {
         cout << "Please enter yout move: \n";
         cout << "My move: ";
         cin >> move;
 
-    } while ((move<=9) && (move>0));
+    } while ((move>9) && (move<1));
 
     return move;
     
@@ -104,7 +108,7 @@ bool testBusyBox(int move){
     }
     else if ((move==7)||(move==8)||(move==9))
     {
-        row=7
+        row=7;
     }
 
     if ((move==1)||(move==4)||(move==7))
@@ -120,7 +124,7 @@ bool testBusyBox(int move){
         col=9;
     }
     
-    if (possibleMoves[row][col]=="X"|| possibleMoves[row][col]=="O")
+    if (possibleMoves[row][col]=='X'|| possibleMoves[row][col]=='O')
     {
         return true;
     }
@@ -131,59 +135,45 @@ bool testBusyBox(int move){
     
 }
 
-void displayMove(int move){
 
-    
-    if (playersTurn%2==0)
-    {
-        moveValue= "X";
-    }
-    else
-    {
-        moveValue= "O";
-    }
-    
-    
-}
-
-void asingMove(int move){
+void asingMoveCoordinate(int move){
      
+    moveValue = (playersTurn%2==0)?'X':'O'; 
     if (move==1)
     {
         possibleMoves[1][1]= moveValue;
     }
-    if (move==2)
+    else if (move==2)
     {
         possibleMoves[1][5]= moveValue;
     }
-    if (move==3)
+    else if (move==3)
     {
         possibleMoves[1][9]= moveValue;
     }
-    if (move==4)
+    else if (move==4)
     {
         possibleMoves[4][1]= moveValue;
     }
-    if (move==5)
+    else if (move==5)
     {
         possibleMoves[4][5]= moveValue;
     }
-    if (move==6)
+    else if (move==6)
     {
         possibleMoves[4][9]= moveValue;
     }
-    if (move==7)
+    else if (move==7)
     {
         possibleMoves[7][1]= moveValue;
     }
-    if (move==8)
+    else if (move==8)
     {
         possibleMoves[7][5]= moveValue;
     }
-    if (move==9)
+    else if (move==9)
     {
         possibleMoves[7][9]= moveValue;
     }
 
-    return moveValue;
 }
