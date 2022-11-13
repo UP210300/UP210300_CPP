@@ -3,14 +3,14 @@
 
 # **UNIT 3: Functions**
 
-This unit is about
+This unit is about functions anda arrays
  
 </div>
  
 
 <div align="center">
  
-Check out the following exercises taht shows the use of functions.
+Check out the following exercise that shows the use of functions.
  
 []()•
 
@@ -19,7 +19,7 @@ Check out the following exercises taht shows the use of functions.
 ## ** <br> 
 ## Exercise 1
 
-Program that 
+Program of the game Tic-Tac-Toe
 
 ### Code
  
