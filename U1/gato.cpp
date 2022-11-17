@@ -22,26 +22,24 @@ int main()
     bool winner= false;
     do
     {   cout << "Tic-Tac-Toe Game \n";
+        moves();
         displayHash();
         move= selectMove();
         busyBox= checkBusyBox;
-        if (busyBox==false)
+        if (busyBox==true)
+        {
+            cout << "Error :( Please enter a valid move \n";
+        }
+        else
         {
             placeMove(move);
             system("clear");
             displayHash();
             winner= checkWin();
-            if (winner== true)
-            {
-                cout << "Congratulations";
-            }
-        }
-        else
-        {
-            cout << "Error :( Please enter a valid move \n";
         }
         
-    } while (busyBox==true);
+       turnPlayer++; 
+    } while (turnPlayer <= 9 || winner ==true);
 
 }
 
@@ -57,7 +55,6 @@ void displayHash()
             {
                 if ((row==1||row==4||row==7)&&(col==2||col==8||col==14))
                 {
-                    moves();
                     cout << let[row][col];  
                 }
                 else
@@ -107,37 +104,7 @@ char selectMove()
 }
 
 bool checkBusyBox(char move){
-    if (move=='a')
-    {
-        row=1;
-        col=2;
-    }
-     else if (move=='a')
-    {
-        row=1;
-        col=2;
-    }
-     else if (move=='a')
-    {
-        row=1;
-        col=2;
-    }
-     else if (move=='a')
-    {
-        row=1;
-        col=2;
-    }
-     else if (move=='a')
-    {
-        row=1;
-        col=2;
-    }
-     else if (move=='a')
-    {
-        row=1;
-        col=2;
-    }
-
+    
     if (let[row][col]== 'X'||let[row][col]== 'O')
     {
         return true;
