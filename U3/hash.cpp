@@ -20,17 +20,17 @@ using namespace std;
 //Main function integer type
 int main (){
 
-    int hash[9][11];
+    int hash[9][17];
 
-    for (int row = 0; row < 9; row++)
+    for (int row = 0; row < 9 ; row++)
     {
-        for (int col = 0; col < 11; col++)
+        for (int col = 0; col < 17; col++)
         {
-            if ((row!=2) && (row!=5) && (col!=3) && (col!=7))
+            if ((row!=2) && (row!=5) && (col!=5) && (col!=11))
             {
                 cout << " ";
             }
-            else if ((col==3) || (col==7))
+            else if ((col==5) || (col==11))
             {
                 cout << "|";
             }
