@@ -87,7 +87,7 @@ Once the game ends you can keep playing by typing 'y', or you can exit the game 
 
 </div>
 
-<img alt="Flowchart" height="150" src="Imagens/Flowchart.png"/> <br>
+<img alt="Flowchart" height="150" src="Images/Flowchart.png"/> <br>
  
 <div align="center">
 
