@@ -39,20 +39,20 @@ For linux:
 
 To clone this repo, type this command on your console or terminal.
 
->git clone https://github.com/UP210300/UP210300_CPP.git
+>       git clone https://github.com/UP210300/UP210300_CPP.git
 
 2. Install GNU c/c++ compiler
 
 Open the terminal and type the following commands.
 
->$ sudo apt-get update
->$ sudo apt-get install build-essential manpages-dev
+>       $ sudo apt-get update
+>       $ sudo apt-get install build-essential manpages-dev
 
 3. Compile this program
 
 To compile this program type this command.
 
->gcc 04_Gato.c -o 04_Gato
+>       gcc 04_Gato.c -o 04_Gato
 
 
 4. All set up! Now you can run this game
@@ -100,12 +100,16 @@ Once the game ends you can keep playing by typing 'y', or you can exit the game 
 
 As it was mentiones before, this game has two modes, single and multi player. First it is displayed a menu that shows you the options such as:
 
+<div align="center">
+
 Tic-Tac-Toe Game 
 
 Menu    
 
 1. Multi  player: Human vs Human
 2. Single player: Human vs Computer 
+
+</div>
 
 You must type the option that you desire, if you type a value different from 1 or two you will get an error message until you type a valid option.
 
