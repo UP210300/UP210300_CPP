@@ -23,12 +23,12 @@ void displayHash();
 void moves();
 void mode();
 char selectMove();
-int selectMovePC();
+char selectMovePC();
 bool checkBusyBox(char, string);
 void placeMove(char, string, string);
 bool checkWin(string);
 void cloneBoard();
-int getBetterPlay(string);
+char getBetterPlay(string);
 void displayWinner();
 char askKeepPlaying();
 
@@ -38,9 +38,10 @@ char let[9][17];
 char imaginaryLet[9][17];
 int gameMode;
 int turnPlayer;
+int perrito;
 const string human = "human";
 const string machine = "PC";
-const string board = "real";
+const string realBoard = "real";
 const string imaginaryBoard = "imaginary";
 
 // Main function integer type
@@ -108,11 +109,11 @@ int main()
             }
             else
             {
-                placeMove(move, board, human);
+                placeMove(move, realBoard, human);
                 system("clear");
                 mode();
                 displayHash();
-                winner = checkWin(board);
+                winner = checkWin(realBoard);
                 turnPlayer++;
             }
         } while (turnPlayer < 9 && winner == false);
@@ -230,7 +231,7 @@ char selectMove()
     return move;
 }
 
-int selectMovePC()
+char selectMovePC()
 {
 
     bool busyBox = false;
@@ -239,12 +240,12 @@ int selectMovePC()
     char let;
     srand(time(NULL));
     move = getBetterPlay(machine);
-    if (move != -1)
+    if (move != -96)
     {
         return move;
     }
     move = getBetterPlay(human);
-    if (move != -1)
+    if (move != -96)
     {
         return move;
     }
@@ -253,7 +254,7 @@ int selectMovePC()
         num = 97 + rand() % (105 - 97);
         let = char(num);
         move = let;
-        busyBox = checkBusyBox(move, board);
+        busyBox = checkBusyBox(move, realBoard);
 
     } while (busyBox == true);
 
@@ -290,7 +291,7 @@ bool checkBusyBox(char move, string board)
     {
         col = 14;
     }
-    if (board == board)
+    if (board == realBoard)
     {
         if (let[row][col] == 'X' || let[row][col] == 'O')
         {
@@ -311,6 +312,7 @@ void placeMove(char move, string board, string player)
 {
 
     char moveValue;
+    row=0; col=0;
     if (turnPlayer % 2 == 0)
     {
 
@@ -357,7 +359,7 @@ void placeMove(char move, string board, string player)
     {
         let[7][14] = moveValue;
     }
-    if (board == board)
+    if (board == realBoard)
     {
         let[row][col] == moveValue;
     }
@@ -378,7 +380,7 @@ void placeMove(char move, string board, string player)
 
 bool checkWin(string board)
 {
-    if (board == board)
+    if (board == realBoard)
     {
 
         if (let[1][2] == let[1][8] && let[1][14] == let[1][2])
@@ -450,14 +452,14 @@ void cloneBoard()
     }
 }
 
-int getBetterPlay(string player)
+char getBetterPlay(string player)
 {
     bool busyBox = false;
     bool winner = false;
-    int move = 97;
+    int move = 96;
     cloneBoard();
     if (player == machine)
-    {
+    {   
         do
         {
             move++;
@@ -486,7 +488,7 @@ int getBetterPlay(string player)
     }
     if (move >= 105)
     {
-        move = -1;
+        move=-96;
     }
     return move;
 }
@@ -495,7 +497,7 @@ void displayWinner()
 {
 
     bool winner;
-    winner = checkWin(board);
+    winner = checkWin(realBoard);
 
     if (gameMode == 1)
     {
