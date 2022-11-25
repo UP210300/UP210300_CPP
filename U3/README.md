@@ -39,7 +39,7 @@ For windows:
 
 3. Download the code, load it into the source editor and compile it.
 
-4. 4. All set up! Now you can run this game
+4. All set up! Now you can run this game
 
 For linux:
 
@@ -60,7 +60,7 @@ Open the terminal and type the following commands.
 
 To compile this program type this command.
 
->       gcc 04_Gato.c -o 04_Gato
+>       gcc  Tic-Tac-Toe.cpp -o Tic-Tac-Toe.exe
 
 
 4. All set up! Now you can run this game
@@ -81,19 +81,31 @@ To run this program, type this command.
 
 While selecting the game mode that you desire, please type what you are aks for (1 or 2), otherwise you you will get an error message.
 
+<div align="center">
 <img alt="GameMode" height="150" src="Images/GameMode.jpeg"/> <br>
+</div>
+
 
 Once you select a mode, the game mode will be desplayed as well as the mark correspondig to each player. In sigle mode the machine is 'O' or player 2.
 
+<div align="center">
 <img alt="HumanVsHuman" height="150" src="Images/HumanVsHuman.jpeg"/> <br>
+<img alt="HumanVsMachine" height="150" src="Images/Machine.jpeg"/> <br>
+</div>
+
 
 Inside the each box of the grid there is a letter correspondig to a possible move, when selecting a move please only type the letters fron 'a' to 'i' otherwise you you will get an error message.
 
+<div align="center">
 <img alt="Move" height="150" src="Images/Move.jpeg"/> <br>
+</div>
 
 Once the game ends you can keep playing by typing 'y', or you can exit the game typing 'n'. If you type 'y' you will go back to the menu and if you type 'n' you will get the netx output.
 
+<div align="center">
 <img alt="Exit" height="150" src="Images/Exit.jpeg/> <br>
+
+</div>
 
 </div>
 
@@ -152,7 +164,16 @@ If the user wants to keep playing they must type 'y' and if they desire to exit 
 Multi player: Human vs Computer
 
 In multi player the user or human is 'X' and the machine or computer is 'O'.
-Unfortunetly this code does not have IA (it is still under construction, hopefully it will be available soon). That being said this game mode works pretty much the same as single player. When the turn is uneven it means that it is the computer's turn ad the way it chooses and option is random.
+Unfortunetly this code does not have IA (it is still under construction, hopefully it will be available soon). That being said this game mode works pretty much the same as single player. When the turn is uneven it means that it is the computer's turn and the way it chooses and option is with a random command.
+
+<div align="center">
+<img alt="Random" height="150" src="Images/Random.jpeg/> 
+
+<img alt="Win" height="150" src="Images/Winner.jpeg/> 
+
+<img alt="Win" height="150" src="Images/Winner2.jpeg/> 
+
+</div>
 
 </div>
 
