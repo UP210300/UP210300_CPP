@@ -103,7 +103,7 @@ Inside the each box of the grid there is a letter correspondig to a possible mov
 Once the game ends you can keep playing by typing 'y', or you can exit the game typing 'n'. If you type 'y' you will go back to the menu and if you type 'n' you will get the netx output.
 
 <div align="center">
-<img alt="Exit" height="150" src="Images/Exit.jpeg"/> <br>
+<img alt="Exit" height="90" src="Images/Exit.jpeg"/> <br>
 
 </div>
 
