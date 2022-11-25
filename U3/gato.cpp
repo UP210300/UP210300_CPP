@@ -1,4 +1,4 @@
-/*
+ /*
 Unit 3. Functions
 Author: Sofía Calderón Juárez
 Date: 19/11/2022
@@ -93,7 +93,7 @@ int main()
             busyBox = checkBusyBox(move);
             if (busyBox == true)
             {
-                cout << "Ups :/, busy box. Select another move \n";
+                cout << "\x1b[33m" << "Ups :/, busy box. Select another move \n" << "\x1B[0m";
             }
             else
             {
@@ -114,6 +114,7 @@ int main()
    
 
     cout << "Thanks for playing this game, hope you enjoy it!" << endl;
+    cout << endl;
     
     return 0;
 
@@ -201,7 +202,7 @@ char selectMove()
     {
         do
         {
-            cout << "Error :( Please enter a valid move \n";
+            cout  << "\x1b[33m" << "Error :( Please enter a valid move \n" << "\x1B[0m";
             cout << "Player " << turnPlayer % 2 + 1 << " Please enter your move: ";
             cin >> move;
         } while (move != 'a' && move != 'b' && move != 'c' && move != 'd' && move != 'e' && move != 'f' && move != 'g' && move != 'h' && move != 'i');
@@ -379,18 +380,18 @@ void displayWinner(){
             if (turnPlayer % 2 == 0)
             {
                 cout << endl;
-                cout << "Congrats player 2 " << "\x1B[1;32m" << "O" << "\x1B[0m" << ", you won \n";
+                cout << "\x1b[36m" << "Congrats player 2 , you won \n" << "\x1B[0m";
             }
             else
             {
                 cout << endl;
-                cout << "Congrats player 1 , you won \n";
+                cout << "\x1b[36m" << "Congrats player 1 , you won \n" << "\x1B[0m";
             }
         }
         else if (winner == false)
         {
             cout << endl;
-            cout << "Draft :( \n";
+            cout << "\x1b[33m" << "Draft :( \n" << "\x1B[0m";
         }
     }
     else
@@ -400,18 +401,18 @@ void displayWinner(){
             if (turnPlayer % 2 == 0)
             {
                 cout << endl;
-                cout << "Ups, looks like the machine is smarter than you. The machine wins !!! " << "\x1B[1;32m" << "O" << "\x1B[0m" << ", you won \n";
+                cout << "\x1b[36m" << "Ups, looks like the machine is smarter than you. The machine wins !!! \n" << "\x1B[0m";
             }
             else
             {
                 cout << endl;
-                cout << "You beat the machine :). Congrats player 1 , you won !!! \n";
+                cout << "\x1b[36m" << "You beat the machine :). Congrats player 1 , you won !!! \n" << "\x1B[0m";
             }
         }
         else if (winner == false)
         {
             cout << endl;
-            cout << "Draft :( \n";
+            cout << "\x1b[33m" << "Draft :( \n" << "\x1B[0m";
         }
     }
     

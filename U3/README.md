@@ -73,9 +73,15 @@ To run this program, type this command.
 
 While selecting the game mode that you desire, please type what you are aks for (1 or 2), otherwise you you will get an error message.
 
+<img alt="GameMode" height="150" src="Images/GameMode.jpeg"/> <br>
+
 Once you select a mode, the game mode will be desplayed as well as the mark correspondig to each player. In sigle mode the machine is 'O' or player 2.
 
+<img alt="HumanVsHuman" height="150" src="Images/HumanVsHuman.jpeg"/> <br>
+
 Inside the each box of the grid there is a letter correspondig to a possible move, when selecting a move please only type the letters fron 'a' to 'i' otherwise you you will get an error message.
+
+<img alt="Move" height="150" src="Images/Move.jpeg"/> <br>
 
 Once the game ends you can keep playing by typing 'y', or you can exit the game typing 'n'.
 
@@ -87,7 +93,7 @@ Once the game ends you can keep playing by typing 'y', or you can exit the game 
 
 </div>
 
-<img alt="Flowchart" height="150" src="Images/Flowchart.png"/> <br>
+<img alt="Flowchart" height="300" src="Images/Flowchart.png"/> <br>
  
 <div align="center">
 
