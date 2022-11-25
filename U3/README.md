@@ -89,7 +89,7 @@ While selecting the game mode that you desire, please type what you are aks for 
 Once you select a mode, the game mode will be desplayed as well as the mark correspondig to each player. In sigle mode the machine is 'O' or player 2.
 
 <div align="center">
-<img alt="HumanVsHuman" height="150" src="Images/HumanVsHuman.jpeg"/> <br>
+<img alt="HumanVsHuman" height="150" src="Images/HumanVsHuman.jpeg"/> 
 <img alt="HumanVsMachine" height="150" src="Images/Machine.jpeg"/> <br>
 </div>
 
