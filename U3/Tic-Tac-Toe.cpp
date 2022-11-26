@@ -1,111 +1,122 @@
+ /*
+Unit 3. Functions
+Author: Sofía Calderón Juárez
+Date: 19/11/2022
+Description: Tic-Tac-Toe game applying the use of functions an arrays
+*/
+ 
+//Library for output and input of the screen
 #include <iostream>
+//LIbrary for the use of printf and scanf
 #include <stdio.h>
+//Library to generate random numbers
 #include <time.h>
-
+ 
+//Use of namespace to avoid the use of std::
+ 
 using namespace std;
-
+ 
+//Tic-Tac-Toe game
+ 
+//Function prototype
 void displayHash();
 void moves();
+void mode();
 char selectMove();
 int selectMovePC();
 bool checkBusyBox(char);
 void placeMove(char);
 bool checkWin();
+void displayWinner();
+char askKeepPlaying();
 
 int row;
 int col;
 char let[9][17];
+int gameMode;
 int turnPlayer;
 
+//Main function integer type
 int main()
 {
-    char move;
-    int gameMode;
-    bool busyBox= true;
-    bool winner= false;
-
-    cout << "\x1B[1;36m" << "       # Tic-Tac-Toe Game # \n"<< "\x1B[0m";
-    cout << endl;
-    cout << "               Menu     \n";
-    cout << endl;
-    cout << "1. Multi  player: Human vs Human \n";
-    cout << "2. Single player: Human vs Computer \n";
-    cout << endl;
-    cout << "Please select the game mode that you desire \n";
-    cout << "Game mode: ";
-    cin >> gameMode;
-
-    while (gameMode!=1 && gameMode!=2)
-    {
-        cout << "\x1b[33m" << "ERROR. Please select a game mode \n"<< "\x1B[0m";
-        cout << "Game mode: ";
-        cin >> gameMode;
-    }
-    
-    cout << endl;
-    moves();
-    displayHash();
+    char keepPlaying;
 
     do
     {
-        if (gameMode == 1)
-        {
-            cout << endl;
-            cout << "Game mode: Human vs Human \n";
-            move = selectMove();
-        }
-        else
-        {
-            cout << endl;
-            cout << "Game mode: Human vs Computer \n";
-            moves();
-            displayHash();
+        char move;
+        bool busyBox = true;
+        bool winner = false;
 
-            /*
-            if (turnPlayer%2==1)
+        cout << "\x1B[1;36m" << "       # Tic-Tac-Toe Game # \n" << "\x1B[0m";
+        cout << endl;
+        cout << "               Menu     \n";
+        cout << endl;
+        cout << "1. Multi  player: Human vs Human \n";
+        cout << "2. Single player: Human vs Computer \n";
+        cout << endl;
+        cout << "Please select the game mode that you desire \n";
+        cout << "Game mode: ";
+        cin >> gameMode;
+
+        while (gameMode != 1 && gameMode != 2)
+        {
+            cout << "\x1b[33m" << "ERROR. Please select a game mode \n" << "\x1B[0m";
+            cout << "Game mode: ";
+            cin >> gameMode;
+        }
+
+        cout << endl;
+        mode();
+        moves();
+        displayHash();
+
+        do
+        {
+            if (gameMode == 1)
             {
-                move = selectMovePC();
+                move = selectMove();
             }
             else
             {
-               move = selectMove();
+
+                if (turnPlayer%2==1) //la maquina impares
+                {
+                    move = selectMovePC();
+                }
+                else
+                {
+                   move = selectMove();
+                }
+                
             }
-            */
-        }
 
-        busyBox = checkBusyBox(move);
-        if (busyBox == true)
-        {
-            cout << "Ups :/, busy box. Select another move \n";
-        }
-        else
-        {
-            placeMove(move);
-            system("clear");
-            displayHash();
-            winner = checkWin();
-            turnPlayer++;
-        }
-    } while (turnPlayer < 9 && winner == false);
+            busyBox = checkBusyBox(move);
+            if (busyBox == true)
+            {
+                cout << "\x1b[33m" << "Ups :/, busy box. Select another move \n" << "\x1B[0m";
+            }
+            else
+            {
+                placeMove(move);
+                system("clear");
+                mode();
+                displayHash();
+                winner = checkWin();
+                turnPlayer++;
+            }
+        } while (turnPlayer < 9 && winner == false);
 
-    if (winner == true)
-    {
-        if (turnPlayer%2== 0)
-        {    
-            cout << endl;
-            cout << "Congrats player 2 " << "\x1B[1;32m" << "O" << "\x1B[0m" << ", you won \n";
-        }
-        else
-        { 
-            cout << endl;
-            cout << "Congrats player 1 , you won \n";
-        }
-    }
-    else if (winner == false)
-    {
-        cout << endl;
-        cout << "Draft :( \n";
-    }
+        displayWinner();
+        turnPlayer= 0;
+        keepPlaying= askKeepPlaying();
+
+    }while ( keepPlaying == 'y' |keepPlaying == 'Y');
+   
+
+    cout << "Thanks for playing this game, hope you enjoy it!" << endl;
+    cout << endl;
+    
+    return 0;
 
 }
 
@@ -160,6 +171,28 @@ void moves(){
 
 }
 
+void mode(){
+
+    if (gameMode == 1)
+    {
+        cout << endl;
+        cout << "Game mode: Human vs Human \n";
+        cout << endl;
+        cout << "Player 1:  " << "\x1B[1;31m" << "X" << "\x1B[0m \t";
+        cout << "Player 2:  " << "\x1B[1;32m" << "O" << "\x1B[0m" << endl;
+        cout << endl;
+    }
+    else
+    {
+        cout << endl;
+        cout << "Game mode: Human vs Computer \n";
+        cout << endl;
+        cout << "Player 1:  " << "\x1B[1;31m" << "X" << "\x1B[0m \t";
+        cout << "Machine:  " << "\x1B[1;32m" << "O" << "\x1B[0m" <<endl;
+        cout << endl;
+    } 
+}
+
 char selectMove()
 {
     char move;
@@ -169,7 +202,7 @@ char selectMove()
     {
         do
         {
-            cout << "Error :( Please enter a valid move \n";
+            cout  << "\x1b[33m" << "Error :( Please enter a valid move \n" << "\x1B[0m";
             cout << "Player " << turnPlayer % 2 + 1 << " Please enter your move: ";
             cin >> move;
         } while (move != 'a' && move != 'b' && move != 'c' && move != 'd' && move != 'e' && move != 'f' && move != 'g' && move != 'h' && move != 'i');
@@ -178,57 +211,45 @@ char selectMove()
     return move;
 }
 
+int selectMovePC(){
+
+    int num;
+    char let;
+    srand(time(NULL));
+    num = 97 + rand() % (105-97);
+    let= char(num);
+    return let;
+}
+
 bool checkBusyBox(char move){
     
     int row;
     int col;
 
-    if (move== 'a')
+    if (move== 'a'|| move== 'b'|| move== 'c' )
     {
         row=1;
-        col=2;
     }
-    else if (move== 'b')
-    {
-        row=1;
-        col=8;
-    }
-    else if (move== 'c')
-    {
-        row=1;
-        col=14;
-    }
-    else if (move== 'd')
+    else if (move== 'd' || move== 'e' || move== 'f' )
     {
         row=4;
+    }
+    else if (move== 'g' || move== 'h' || move== 'i')
+    {
+        row=7;
+    }
+    if (move== 'a'|| move== 'd'|| move== 'g' )
+    {
         col=2;
     }
-    else if (move== 'e')
+    else if (move== 'b' || move== 'e' || move== 'h')
     {
-        row=4;
         col=8;
     }
-    else if (move== 'f')
+    else if (move== 'c' || move== 'f' || move== 'i' )
     {
-        row=4;
         col=14;
     }
-    else if (move== 'g')
-    {
-        row=7;
-        col=2;
-    }
-    else if (move== 'h')
-    {
-        row=7;
-        col=8;
-    }
-    else if (move== 'i')
-    {
-        row=7;
-        col=14;
-    }
-
     
     if (let[row][col]== 'X'||let[row][col]== 'O')
     {
@@ -345,4 +366,73 @@ bool checkWin(){
     else
         return false;
     
+}
+
+void displayWinner(){
+
+    bool winner;
+    winner= checkWin();
+
+    if (gameMode==1)
+    {
+        if (winner == true)
+        {
+            if (turnPlayer % 2 == 0)
+            {
+                cout << endl;
+                cout << "\x1b[36m" << "Congrats player 2 , you won \n" << "\x1B[0m";
+            }
+            else
+            {
+                cout << endl;
+                cout << "\x1b[36m" << "Congrats player 1 , you won \n" << "\x1B[0m";
+            }
+        }
+        else if (winner == false)
+        {
+            cout << endl;
+            cout << "\x1b[33m" << "Draft :( \n" << "\x1B[0m";
+        }
+    }
+    else
+    {
+        if (winner == true)
+        {
+            if (turnPlayer % 2 == 0)
+            {
+                cout << endl;
+                cout << "\x1b[36m" << "Ups, looks like the machine is smarter than you. The machine wins !!! \n" << "\x1B[0m";
+            }
+            else
+            {
+                cout << endl;
+                cout << "\x1b[36m" << "You beat the machine :). Congrats player 1 , you won !!! \n" << "\x1B[0m";
+            }
+        }
+        else if (winner == false)
+        {
+            cout << endl;
+            cout << "\x1b[33m" << "Draft :( \n" << "\x1B[0m";
+        }
+    }
+    
+    
+}
+
+char askKeepPlaying(){
+
+    char keepPlaying;
+
+    cout << "If you want to keep playing please type -y, if not please type -n \n";
+    cin >> keepPlaying;
+
+    if (keepPlaying != 'y' && keepPlaying != 'Y' && keepPlaying != 'n' && keepPlaying != 'N')
+    {
+        cout << "Error :(, please type a valid option. \n";
+        cout << "If you want to keep playing please type -y, if not please tyoe -n \n";
+        cin >> keepPlaying;
+    }
+
+    system("clear");
+    return keepPlaying;
 }
